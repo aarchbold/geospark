@@ -14,6 +14,7 @@ var gulp = require('gulp'),
         cssPath: './src/css',
         cssDest: './site/static/css',
         htmlSrc: './src/html/site/*',
+        includesSrc: './src/html/includes/*',
         htmlDest: './site'
     }
 
@@ -72,6 +73,7 @@ gulp.task('autoprefixer', function () {
 gulp.task('watch', function() {
     gulp.watch(config.htmlSrc + '/**/*.html', ['fileinclude']);
     gulp.watch(config.htmlSrc + '*.html', ['fileinclude']);
+    gulp.watch(config.includesSrc + '*.html', ['fileinclude']);
     gulp.watch(config.sassPath + '/**/*.scss', ['sass']);
     gulp.watch(config.cssPath + '/*.css', ['autoprefixer']);
     gulp.watch(config.vendorsPath + '/*.js', ['vendors']);
