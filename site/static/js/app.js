@@ -108,9 +108,6 @@ $.fn.handleDropDowns = function() {
     var $context = $(this),
         $triggers = $('.topnav-dropdown__trigger', $context);
 
-    console.log($context);
-    console.log($triggers);
-
     $triggers.click(function() {
         var $parent = $(this).parent();
         console.log($parent);
