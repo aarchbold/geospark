@@ -93,6 +93,7 @@ $hyperion-map-width: 30%;
     border-radius: 50%;
     background: #ff496f;
     box-shadow: 0 0 0 rgba(256,73, 111, 0.4);
+    opacity: 0;
     &.-blip1 {
         top: 48%;
         left: 50%;
@@ -128,16 +129,31 @@ $hyperion-map-width: 30%;
         animation: map-pulse 2.8s infinite;
         animation-delay: 1.8s;
     }
+    &.-blip7 {
+        top: 42%;
+        left: 12%;
+        animation: map-pulse 3.1s infinite;
+        animation-delay: 0.8s;
+    }
 }
 
 @keyframes map-pulse {
     0% {
-      box-shadow: 0 0 0 0 rgba(256,73, 111, 0.9);
+        opacity: 0;
+        box-shadow: 0 0 0 0 rgba(256,73, 111, 0.9);
+    }
+    20% {
+        opacity: 1;
     }
     70% {
+        opacity: 1;
         box-shadow: 0 0 0 20px rgba(256,73, 111, 0);
+    }
+    90% {
+        opacity: 0;
     }
     100% {
         box-shadow: 0 0 0 0 rgba(256,73, 111, 0);
+        opacity: 0;
     }
   }

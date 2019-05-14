@@ -484,6 +484,7 @@ footer {
   border-radius: 50%;
   background: #ff496f;
   box-shadow: 0 0 0 rgba(255, 73, 111, 0.4);
+  opacity: 0;
 }
 .home-hyperion__map--blip.-blip1 {
   top: 48%;
@@ -520,16 +521,31 @@ footer {
   animation: map-pulse 2.8s infinite;
   animation-delay: 1.8s;
 }
+.home-hyperion__map--blip.-blip7 {
+  top: 42%;
+  left: 12%;
+  animation: map-pulse 3.1s infinite;
+  animation-delay: 0.8s;
+}
 
 @keyframes map-pulse {
   0% {
+    opacity: 0;
     box-shadow: 0 0 0 0 rgba(255, 73, 111, 0.9);
   }
+  20% {
+    opacity: 1;
+  }
   70% {
+    opacity: 1;
     box-shadow: 0 0 0 20px rgba(255, 73, 111, 0);
+  }
+  90% {
+    opacity: 0;
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 73, 111, 0);
+    opacity: 0;
   }
 }
 /* global styles
