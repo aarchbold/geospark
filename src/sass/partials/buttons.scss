@@ -5,19 +5,34 @@ button, .button {
     transition: all 0.4s;
     display: inline-block;
     margin: 0;
-    padding: 8px 15px !important;
+    padding: 14px 30px !important;
     border-radius: 5px;
-    font-family: 'TruenoRegular', sans-serif;
+    font-family: 'TruenoUltraLight', sans-serif;
     text-decoration: none;
-    font-size: 15px;
-    box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
+    font-size: 18px;
+    background: $color-play-button;
     &:hover {
-        opacity: 0.6;
+        opacity: 0.7;
+    }
+    &.button-play {
+        position: relative;
+        padding-left: 60px !important;
     }
 }
 
+.button-icon {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 26px;
+}
+
 .button-topnav {
+    padding: 8px 15px !important;
     color: $color-main-font;
     background-color: $color-nav-button;
+    font-size: 15px;
+    font-family: 'TruenoRegular', sans-serif;
+    box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
 }
 

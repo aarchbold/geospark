@@ -4,7 +4,7 @@
             <img class="topnav-logo" src="static/images/logos/logo-geospark.svg" />
             <div class="topnav-links-container">
                 <ul class="topnav-links">
-                    <li><a class="topnav-links__item" href="#">Home</a></li>
+                    <li><a @@if (section === 'home') {class="topnav-links__item -active"} @@if (section !== 'home') {class="topnav-links__item"} href="#">Home</a></li>
                     <li>
                         <a class="topnav-links__item topnav-dropdown__trigger" href="#">Features</a>
                         <div class="topnav-dropdown">
