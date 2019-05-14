@@ -10,8 +10,8 @@
 <meta property="og:image" content="">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Geospark">
-<script src="static/js/vendors.js?cache=1557815670960"></script>
-<link rel="stylesheet" href="static/css/styles.css?cache=1557815670960">
+<script src="static/js/vendors.js?cache=1557816494480"></script>
+<link rel="stylesheet" href="static/css/styles.css?cache=1557816494480">
 <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png">
 
     </head>
@@ -111,23 +111,23 @@
                     <p class="page-subheader">Geospark Analytics is powering our new platform called Hyperion. This new platform is the central nervous system for real-time world data. We take complex data and make it simple so you can make quick decisions and aviod costly trip wires today and tomorrow.</p>
                     <div class="home-hyperion__container">
                         <div class="home-hyperion__list">
-                            <div class="home-hyperion__list--item -active">
+                            <div class="home-hyperion__list--item -active" data-target="panelHotspot">
                                 <img src="static/images/ui/home/target-hotspot.svg" />
                                 <strong>Hotspots</strong>
                                 Pin point chatter as it’s happening so you can make faster decisions.
                             </div>
-                            <div class="home-hyperion__list--item">
+                            <div class="home-hyperion__list--item" data-target="panelPulse">
                                 <img src="static/images/ui/home/target-pulse.svg" />
                                 <strong>Pulse</strong>
                                 Quickly understand stability on a global scale all the way down to a specific area of interest. 
                             </div>
-                            <div class="home-hyperion__list--item">
+                            <div class="home-hyperion__list--item" data-target="panelForecast">
                                 <img src="static/images/ui/home/target-forecast.svg" />
                                 <strong>Forecast</strong>
                                 Plan for the future, get a leg up on the competition so you can win tomorrow.
                             </div>
                         </div>
-                        <div class="home-hyperion__map">
+                        <div class="hyperion-panel home-hyperion__map -active" id="panelHotspot">
                             <div class="home-hyperion__map--blip -blip1"></div>
                             <div class="home-hyperion__map--blip -blip2"></div>
                             <div class="home-hyperion__map--blip -blip3"></div>
@@ -135,6 +135,12 @@
                             <div class="home-hyperion__map--blip -blip5"></div>
                             <div class="home-hyperion__map--blip -blip6"></div>
                             <div class="home-hyperion__map--blip -blip7"></div>
+                            <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
+                        </div>
+                        <div class="hyperion-panel home-hyperion__map" id="panelPulse">
+                            <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
+                        </div>
+                        <div class="hyperion-panel home-hyperion__map" id="panelForecast">
                             <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
                         </div>
                     </div>
@@ -189,6 +195,6 @@
 </footer>
         </div>
 
-        <script src="static/js/app.js?cache=1557815670960"></script>
+        <script src="static/js/app.js?cache=1557816494480"></script>
     </body>
 </html>

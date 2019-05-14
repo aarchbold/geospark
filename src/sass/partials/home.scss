@@ -137,6 +137,13 @@ $hyperion-map-width: 30%;
     }
 }
 
+.hyperion-panel {
+    display: none;
+    &.-active {
+        display: block;
+    }
+}
+
 @keyframes map-pulse {
     0% {
         opacity: 0;

@@ -568,6 +568,13 @@ footer {
   animation-delay: 0.8s;
 }
 
+.hyperion-panel {
+  display: none;
+}
+.hyperion-panel.-active {
+  display: block;
+}
+
 @-webkit-keyframes map-pulse {
   0% {
     opacity: 0;
