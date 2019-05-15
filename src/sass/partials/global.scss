@@ -36,6 +36,9 @@ a {
 }
 
 .page-subheader {
+    position: relative;
+    z-index: 1;
     font-size: 18px;
     line-height: 1.3;
 }
+

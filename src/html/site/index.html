@@ -10,6 +10,19 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="home-video-container">
+            <div class="home-video-content">
+                <div class="home-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PMku-GbafEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="#" class="button button-modal">Start 3 Day FREE Trial</a>
+                <br />
+                <a href="#" class="home-overlay-close">
+                    Close
+                </a>
+            </div>
+            <div class="home-video-overlay"></div>
+        </div>
         <div class="page-outer">
             @@include('../includes/topnav.html', {
                 "section": "home"
@@ -19,7 +32,7 @@
                     <h1 class="page-h1">A Pulse For Your World</h1>
                     <p class="page-subheader">Powered by applied machine learning, Hyperion drives decisions that seize new opportunities, secure operations and employees, and protect brand equity.</p>
                     <div class="home-video__cta">
-                        <a href="#" class="button button-play">
+                        <a href="#" class="button button-play home-video-open">
                             <img class="button-icon" src="static/images/icons/icon-play.svg" />
                             Watch and Learn
                         </a>
@@ -63,9 +76,60 @@
                             <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
                         </div>
                         <div class="hyperion-panel home-hyperion__map" id="panelPulse">
+                            <img class="home-hyperion__map--image -outline -outline5" src="static/images/ui/home/hyperion-map-outline1.png" />
+                            <img class="home-hyperion__map--image -outline -outline4" src="static/images/ui/home/hyperion-map-outline2.png" />
+                            <img class="home-hyperion__map--image -outline -outline3" src="static/images/ui/home/hyperion-map-outline3.png" />
+                            <img class="home-hyperion__map--image -outline -outline2" src="static/images/ui/home/hyperion-map-outline4.png" />
+                            <img class="home-hyperion__map--image -outline -outline1" src="static/images/ui/home/hyperion-map-outline5.png" />
                             <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
                         </div>
                         <div class="hyperion-panel home-hyperion__map" id="panelForecast">
+                            <div class="hyperion-forecast">
+                                <div class="hyperion-forecast__header">Forecast</div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label1">
+                                       <div class="hyperion-forecast__disc -amber">M</div>
+                                        98%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label2">
+                                       <div class="hyperion-forecast__disc -amber">T</div>
+                                        98%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label3">
+                                       <div class="hyperion-forecast__disc">W</div>
+                                        97%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label4">
+                                       <div class="hyperion-forecast__disc">T</div>
+                                        94%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label5">
+                                       <div class="hyperion-forecast__disc">F</div>
+                                        91%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label6">
+                                       <div class="hyperion-forecast__disc">S</div>
+                                        89%
+                                    </div>
+                                </div>
+                                <div class="hyperion-forecast__col">
+                                    <div class="hyperion-forecast__label -label7">
+                                       <div class="hyperion-forecast__disc">S</div>
+                                        85%
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="home-hyperion__map--image -forecast" src="static/images/ui/home/hyperion-map-forecast1.png" />
                             <img class="home-hyperion__map--image" src="static/images/ui/home/hyperion-map.png" />
                         </div>
                     </div>

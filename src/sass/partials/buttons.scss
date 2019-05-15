@@ -18,6 +18,10 @@ button, .button {
         position: relative;
         padding-left: 60px !important;
     }
+    &.button-modal {
+        color: $color-nav-links;
+        background: $color-signup-button;
+    }
 }
 
 .button-icon {
