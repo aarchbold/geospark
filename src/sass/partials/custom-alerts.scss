@@ -1,0 +1,76 @@
+/* custom alerts styles
+*/
+
+// vars
+
+// styles
+.page-outer__custom-alerts {
+    position: relative;
+    background-color: $color-bg-custom-alerts;
+}
+
+.section-custom-alerts {
+    padding: 80px 34% 80px 0;
+}
+
+.text-alerts__container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34%;
+}
+
+.text-alert {
+    transition: all 0.5s;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 40px 20px 90px;
+    background-color: $bg-navigation;
+    font-size: 20px;
+    font-family: 'TruenoRegular', sans-serif;
+    color: $color-hyperion-text;
+    width: 370px;
+    line-height: 1.2;
+    &.-position1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transform: translate(50px,-50px);
+        z-index: 3;
+    }
+    &.-position2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        transform: translate(-40px,-10px) scale(0.75);
+        z-index: 2;
+    }
+    &.-position3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        transform: translate(100px,-116px) scale(0.75);
+        z-index: 1;
+    }
+}
+
+.text-alert__icon {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: $color-hyperion-icon;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

@@ -39,8 +39,9 @@ $hyperion-map-width: 30%;
 .home-hyperion__container {
     position: relative;
     margin-top: 100px;
-    min-height: 800px;
+    min-height: auto;
     padding-left: $hyperion-map-width;
+    padding-bottom: 120px;
 }
 
 .home-hyperion__list {
