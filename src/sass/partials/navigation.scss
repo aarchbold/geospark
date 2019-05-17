@@ -12,12 +12,24 @@ nav {
 }
 
 .topnav-container {
+    transition: all 0.25s;
     height: 85px;
     box-sizing: border-box;
     background-color: $bg-navigation;
+    &.-slim {
+        height: 50px;
+        .navigation-inner {
+            padding-top: 10px;
+            .topnav-logo {
+                width: 120px;
+                top: 13px;
+            }
+        }
+    }
 }
 
 .navigation-inner {
+    transition: all 0.25s;
     position: relative;
     max-width: 1376px;
     margin: 0 auto;
@@ -26,6 +38,7 @@ nav {
 }
 
 .topnav-logo {
+    transition: all 0.25s;
     position: absolute;
     left: 20px;
     top: 20px;

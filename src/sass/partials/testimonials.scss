@@ -1,0 +1,73 @@
+/* testimonial styles
+*/
+
+// vars
+
+// styles
+.section-testimonials__header {
+    padding: 60px 34% 60px 0;
+}
+
+.testimonial-inner {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 180px;
+}
+
+.testimonial-item {
+    background-size: cover;
+}
+
+.testimonial-profile {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid $color-main-font;
+}
+
+.testimonial-name {
+    font-size: 40px;
+    font-family: 'TruenoRegular', sans-serif;
+    padding-bottom: 10px;
+}
+
+.testimonial-occupation {
+    font-size: 20px;
+    font-family: 'TruenoRegular', sans-serif;
+    padding-bottom: 10px;
+}
+
+.testimonial-bio {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+
+.home-carousel__dots {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    li {
+        float: left;
+        margin-left: 8px;
+        &.slick-active {
+            button, .button {
+                background-color: white !important;
+            }
+        }
+    }
+    button, .button {
+        outline: none;
+        border-radius: 50%;
+        background-color: transparent;
+        padding: 0 !important;
+        text-indent: 9000px;
+        overflow: hidden;
+        width: 10px;
+        height: 10px;
+    }
+}

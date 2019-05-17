@@ -33,6 +33,9 @@ a {
         height: 6px;
         background-color: $color-main-font;
     }
+    &.-inverse {
+        color: $color-main-inverse;
+    }
 }
 
 .page-subheader {
@@ -40,5 +43,12 @@ a {
     z-index: 1;
     font-size: 18px;
     line-height: 1.3;
+    &.-inverse {
+        color: $color-main-inverse;
+    }
+}
+
+.section-cta {
+    margin-top: 60px;
 }
 

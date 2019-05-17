@@ -1,0 +1,53 @@
+<div id="homeTestimonial">
+</div>
+
+<script id="testimonial-template" type="text/x-handlebars-template">
+    {{#each testimonials}}
+    <div class="testimonial-item testimonial-background" style="background-image: url({{this.background}});">
+        <div class="page-inner testimonial-inner">
+            <img class="testimonial-profile" src="{{this.profile}}" />
+            <div class="testimonial-name">
+                {{this.name}}
+            </div>
+            <div class="testimonial-occupation">
+                {{this.occupation}}
+            </div>
+            <div class="testimonial-bio">
+                {{this.quote}}
+            </div>
+            <a href="#" class="button button-trial">Sign Up Now</a>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript">
+    var data = {
+        testimonials: [
+            {
+                background: "static/images/ui/testimonials/bg-dana.jpg",
+                profile: "static/images/ui/testimonials/dana.jpg",
+                name: "Dana Kopřivová",
+                occupation: "Traveller",
+                quote: "I use Hyperions platform while I travel, this keeps me heavily informed about local events that could put me in dangers path. I also use Hyperion to preplan my trips using thier forecasting abilites, definetly a part of my travel toolkit now."
+            },
+            {
+                background: "static/images/ui/testimonials/bg-dana.jpg",
+                profile: "static/images/ui/testimonials/dana.jpg",
+                name: "Another person",
+                occupation: "an occupation",
+                quote: "I use Hyperions platform while I travel, this keeps me heavily informed about local events that could put me in dangers path. I also use Hyperion to preplan my trips using thier forecasting abilites, definetly a part of my travel toolkit now."
+            },
+            {
+                background: "static/images/ui/testimonials/bg-dana.jpg",
+                profile: "static/images/ui/testimonials/dana.jpg",
+                name: "Yet Another person",
+                occupation: "an occupation again",
+                quote: "I use Hyperions platform while I travel, this keeps me heavily informed about local events that could put me in dangers path. I also use Hyperion to preplan my trips using thier forecasting abilites, definetly a part of my travel toolkit now."
+            }
+        ]
+    };
+    var template = Handlebars.compile(document.getElementById('testimonial-template').innerHTML);
+    var testimonialData = template(data);
+    document.getElementById('homeTestimonial').innerHTML += testimonialData;
+</script>

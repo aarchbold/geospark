@@ -1,0 +1,31 @@
+/* facts styles
+*/
+
+// vars
+
+// styles
+.page-outer__facts {
+    padding: 60px 0;
+    background-color: $color-bg-alternate;
+}
+
+.hyperion-facts {
+    padding: 100px 0;
+    color: $color-main-inverse;
+}
+
+.hyperion-facts__intro {
+    text-align: center;
+}
+
+.hyperion-facts__h2 {
+    font-size: 90px;
+    font-family: 'TruenoRegular', sans-serif;
+}
+
+.hyperion-facts__subheader {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    line-height: 1.3;
+}
