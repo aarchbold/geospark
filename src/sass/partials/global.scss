@@ -25,16 +25,20 @@ a {
     line-height: 1.2;
     padding-bottom: 25px;
     font-family: 'TruenoRegular', sans-serif;
-    .page-h2__hr {
-        position: absolute;
-        top: -2px;
-        left: 4px;
-        width: 32px;
-        height: 6px;
-        background-color: $color-main-font;
-    }
     &.-inverse {
         color: $color-main-inverse;
+    }
+}
+
+.page-h2__hr {
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 32px;
+    height: 6px;
+    background-color: $color-main-font;
+    &.-inverse {
+        background-color: $color-main-inverse;
     }
 }
 
