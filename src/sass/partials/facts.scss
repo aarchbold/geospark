@@ -80,3 +80,31 @@
     padding-top: 10px;
     font-size: 18px;
 }
+
+@media (max-width: 650px) {
+    .page-outer__facts {
+        padding-bottom: 0;
+    }
+    .hyperion-facts__h2 {
+        font-size: 50px;
+    }
+
+    .hyperion-facts__header {
+        font-size: 30px;
+        .page-h2__hr {
+            width: 17px;
+            height: 3px;
+        }
+    }
+
+    .hyperion-facts__them, .hyperion-facts__us {
+        padding: 40px;
+    }
+    .hyperion-facts__comparison--row {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .hyperion-facts__label {
+        font-size: 16px;
+    }
+}

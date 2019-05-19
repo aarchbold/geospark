@@ -11,6 +11,7 @@ $.fn.handleAlerts = function() {
             if (newIndex > 3) {
                 newIndex = 1;
             }
+
             $(e).attr('class','text-alert -position'+newIndex);
         },delay)
     });

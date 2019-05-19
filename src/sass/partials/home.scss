@@ -293,6 +293,7 @@ $hyperion-map-width: 30%;
         width: 100%;
         box-sizing: border-box;
         padding-right: 10px;
+        opacity: 1;
     }
     .hyperion-panel {
         display: none !important;
@@ -308,6 +309,11 @@ $hyperion-map-width: 30%;
     }
     .home-intro__background {
         display: none;
+    }
+    .home-intro {
+        .page-h1, .page-subheader, .home-video__cta {
+            text-align: center;
+        }
     }
 }
 

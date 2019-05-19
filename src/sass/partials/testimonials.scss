@@ -71,3 +71,28 @@
         height: 10px;
     }
 }
+
+@media (max-width: 650px) {
+    .section-testimonials__header {
+        padding: 60px 0;
+    }
+    .testimonial-inner {
+        padding-left: 40px;
+        padding-top: 60px;
+        .testimonial-cta {
+            text-align: center;
+        }
+    }
+    .testimonial-profile {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .home-carousel__dots {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

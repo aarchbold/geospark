@@ -144,6 +144,10 @@ nav {
   width: 120px;
   top: 13px;
 }
+.topnav-container.-slim .topnav-mobile-cta {
+  transition: all 0.25s;
+  top: 14px;
+}
 
 .navigation-inner {
   transition: all 0.25s;
@@ -719,6 +723,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
     padding-right: 10px;
+    opacity: 1;
   }
 
   .hyperion-panel {
@@ -736,6 +741,10 @@ footer {
 
   .home-intro__background {
     display: none;
+  }
+
+  .home-intro .page-h1, .home-intro .page-subheader, .home-intro .home-video__cta {
+    text-align: center;
   }
 }
 @keyframes map-pulse {
@@ -872,6 +881,18 @@ button.button-trial, .button.button-trial {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 650px) {
+  .section-custom-alerts {
+    padding: 280px 0 80px 0;
+  }
+
+  .text-alerts__container {
+    top: 150px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /* getting started styles
 */
 .page-outer__get-started {
@@ -956,6 +977,33 @@ button.button-trial, .button.button-trial {
   height: 10px;
 }
 
+@media (max-width: 650px) {
+  .section-testimonials__header {
+    padding: 60px 0;
+  }
+
+  .testimonial-inner {
+    padding-left: 40px;
+    padding-top: 60px;
+  }
+  .testimonial-inner .testimonial-cta {
+    text-align: center;
+  }
+
+  .testimonial-profile {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .home-carousel__dots {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /* facts styles
 */
 .page-outer__facts {
@@ -1033,4 +1081,35 @@ button.button-trial, .button.button-trial {
 .hyperion-facts__label {
   padding-top: 10px;
   font-size: 18px;
+}
+
+@media (max-width: 650px) {
+  .page-outer__facts {
+    padding-bottom: 0;
+  }
+
+  .hyperion-facts__h2 {
+    font-size: 50px;
+  }
+
+  .hyperion-facts__header {
+    font-size: 30px;
+  }
+  .hyperion-facts__header .page-h2__hr {
+    width: 17px;
+    height: 3px;
+  }
+
+  .hyperion-facts__them, .hyperion-facts__us {
+    padding: 40px;
+  }
+
+  .hyperion-facts__comparison--row {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .hyperion-facts__label {
+    font-size: 16px;
+  }
 }
