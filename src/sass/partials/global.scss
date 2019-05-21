@@ -19,6 +19,12 @@ a {
     font-family: 'TruenoRegular', sans-serif;
 }
 
+.page-section__h1 {
+    font-size: 44px;
+    padding: 120px 0 40px;
+    color: $color-main-inverse;
+}
+
 .page-h2 {
     position: relative;
     font-size: 50px;
@@ -54,5 +60,11 @@ a {
 
 .section-cta {
     margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+    .page-h1 {
+        font-size: 50px;
+    }
 }
 

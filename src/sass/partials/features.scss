@@ -1,0 +1,24 @@
+/* features 
+*/
+
+// vars
+
+// styles
+.feature-section__hotspots {
+    background-color: $bg-color-feature-hotspots;
+}
+
+.feature-section__forecasting {
+    background-color: $bg-color-feature-forecasting;
+}
+
+.feature-section__pulse {
+    background-color: $bg-color-feature-pulse;
+}
+
+.feature-section__events {
+    background-color: $bg-color-feature-events;
+}
+
+// media queries
+@media (max-width: 650px) {}

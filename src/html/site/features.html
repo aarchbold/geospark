@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        @@include('../includes/header.html', {
+            "title": "Geospark Analytics",
+            "description": "Meta description here..."
+        })
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body class="scrollify">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="page-outer">
+            @@include('../includes/topnav.html', {
+                "section": "features"
+            })
+        </div>
+        <div class="page-outer page-outer__header">
+            <div class="page-inner">
+                <div class="page-h1 page-section__h1">Features</div>
+            </div>
+        </div>
+
+        <div id="featuresHotspot" class="page-outer feature-section__hotspots screen-height scroll-me">
+
+        </div>
+
+        <div id="featuresForecasting" class="page-outer feature-section__forecasting screen-height scroll-me">
+
+        </div>
+
+        <div id="featuresPulse" class="page-outer feature-section__pulse screen-height scroll-me">
+
+        </div>
+
+        <div id="featuresEvents" class="page-outer feature-section__events screen-height scroll-me">
+
+        </div>
+        
+        <div class="scroll-me">
+            @@include('../includes/get-started.html')
+        
+            <div class="page-outer">
+                @@include('../includes/footer.html')
+            </div>
+        </div>
+
+        <script src="static/js/app.js?cache=[[busterDouglas]]"></script>
+    </body>
+</html>

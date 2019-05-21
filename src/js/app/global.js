@@ -9,4 +9,9 @@ $.fn.handleScreenHeight = function() {
 
 $(function(){
     $('.screen-height').handleScreenHeight();
+    $.scrollify({
+        section : '.scroll-me',
+        setHeights: false,
+        standardScrollElements: '.no-scroll'
+    });
 })

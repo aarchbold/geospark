@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.page-outer__header {
+    background-color: $bg-navigation;
+}
+
 .page-inner {
     max-width: 1200px;
     margin: 0 auto;
