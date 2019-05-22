@@ -20,5 +20,34 @@
     background-color: $bg-color-feature-events;
 }
 
+.feature-section {
+    position: relative;
+}
+
+.features-section__content {
+    position: relative;
+    padding: 200px 10px 0 55%;
+    color: $color-main-font;
+    &.-inverse {
+        // color: $color-main-inverse;
+        padding: 200px 55% 0 10px;
+    }
+    &.-inverse-color {
+        color: $color-main-inverse;
+    }
+}
+
+.feature-h2 {
+    font-size: 40px;
+    font-family: 'TruenoRegular', sans-serif;
+    padding-bottom: 30px;
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-bottom: 30px;
+}
+
 // media queries
 @media (max-width: 650px) {}

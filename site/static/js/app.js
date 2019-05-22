@@ -56,7 +56,8 @@ $(function(){
     $.scrollify({
         section : '.scroll-me',
         setHeights: false,
-        standardScrollElements: '.no-scroll'
+        standardScrollElements: '.no-scroll',
+        offset: 0
     });
 })
 function getParam(name) {

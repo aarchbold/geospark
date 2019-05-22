@@ -889,6 +889,27 @@ button.button-trial, .button.button-trial {
   color: #000000;
   background: #ffffff;
 }
+button.button-hotspots, .button.button-hotspots {
+  background-color: #FF496F;
+  -webkit-box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+button.button-forecasting, .button.button-forecasting {
+  background-color: #003155;
+  -webkit-box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+button.button-pulse, .button.button-pulse {
+  color: #000000;
+  background-color: #FFD66F;
+  -webkit-box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+button.button-events, .button.button-events {
+  background-color: #01AEEB;
+  -webkit-box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
 
 .button-icon {
   position: absolute;
@@ -1249,4 +1270,32 @@ button.button-trial, .button.button-trial {
 
 .feature-section__events {
   background-color: #01AEEB;
+}
+
+.feature-section {
+  position: relative;
+}
+
+.features-section__content {
+  position: relative;
+  padding: 200px 10px 0 55%;
+  color: #ffffff;
+}
+.features-section__content.-inverse {
+  padding: 200px 55% 0 10px;
+}
+.features-section__content.-inverse-color {
+  color: #000000;
+}
+
+.feature-h2 {
+  font-size: 40px;
+  font-family: 'TruenoRegular', sans-serif;
+  padding-bottom: 30px;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.4;
+  padding-bottom: 30px;
 }

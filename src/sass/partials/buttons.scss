@@ -22,6 +22,23 @@ button, .button {
         color: $color-nav-links;
         background: $color-signup-button;
     }
+    &.button-hotspots {
+        background-color: $bg-color-feature-hotspots;
+        box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    }
+    &.button-forecasting {
+        background-color: $bg-color-feature-forecasting;
+        box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    }
+    &.button-pulse {
+        color: $color-main-inverse;
+        background-color: $bg-color-feature-pulse;
+        box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    }
+    &.button-events {
+        background-color: $bg-color-feature-events;
+        box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    }
 }
 
 .button-icon {
