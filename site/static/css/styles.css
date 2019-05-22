@@ -1274,6 +1274,7 @@ button.button-events, .button.button-events {
 
 .feature-section {
   position: relative;
+  z-index: 1;
 }
 
 .features-section__content {
@@ -1298,4 +1299,67 @@ button.button-events, .button.button-events {
   font-size: 16px;
   line-height: 1.4;
   padding-bottom: 30px;
+}
+
+.feature-hotspots__map {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  height: 100%;
+}
+.feature-hotspots__map img {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  height: 100%;
+}
+
+.feature-section__forecasting-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.feature-section__forecasting-bg img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+  clip-path: inset(0% 0% 0% 0%);
+}
+.feature-section__forecasting-bg img.element-to-animate {
+  -webkit-clip-path: inset(0% 100% 0% 0%);
+  clip-path: inset(0% 100% 0% 0%);
+}
+.feature-section__forecasting-bg img.animate-clip {
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+  clip-path: inset(0% 0% 0% 0%);
+  -webkit-animation: clippy 6s;
+  animation: clippy 6s;
+}
+
+@-webkit-keyframes clippy {
+  0% {
+    -webkit-clip-path: inset(0% 100% 0% 0%);
+    clip-path: inset(0% 100% 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@keyframes clippy {
+  0% {
+    -webkit-clip-path: inset(0% 100% 0% 0%);
+    clip-path: inset(0% 100% 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
