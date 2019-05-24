@@ -1234,7 +1234,7 @@ button.button-events, .button.button-events {
 }
 .feature-hotspots__map .feature-blip.-blip4 {
   top: 101%;
-  right: 8%;
+  right: 14%;
   animation: feature-pulse 4s infinite;
 }
 
@@ -1330,9 +1330,8 @@ button.button-events, .button.button-events {
 .event-cards__container {
   position: absolute;
   width: 50%;
-  top: 50%;
+  top: 65%;
   left: 50%;
-  transform: translateY(-50%);
   max-width: 600px;
 }
 
@@ -1454,5 +1453,33 @@ button.button-events, .button.button-events {
   100% {
     box-shadow: 0 0 0 0 rgba(186, 152, 65, 0);
     opacity: 0.4;
+  }
+}
+@media (max-width: 800px) {
+  .feature-hotspots__map {
+    display: none;
+  }
+
+  .features-section__content {
+    padding: 120px 0px;
+  }
+  .features-section__content.-inverse {
+    padding: 120px 0px;
+  }
+
+  .feature-section__forecasting-bg img {
+    height: 160px;
+  }
+
+  .features-section__pulse {
+    display: none;
+    width: 100%;
+    right: auto;
+    top: auto;
+    bottom: 160px;
+  }
+
+  .event-cards__container {
+    display: none;
   }
 }

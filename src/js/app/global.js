@@ -7,6 +7,26 @@ $.fn.handleScreenHeight = function() {
     });
 }
 
+$.fn.handleScrolling = function() {
+    var $context = $(this),
+        $links = $('.go-to-link');
+
+    $links.click(function(e) {
+        console.log($(e));
+    })
+
+    // $('html, body').animate({
+    //     scrollTop: ($('#element').offset().top)
+    // },500);
+}
+
+goToSection = function() {
+    var el = $("div[data-target='" + window.location.hash +"']");
+    $('html, body').animate({
+        scrollTop: el.offset().top
+    },300);
+}
+
 $(function(){
     $('.screen-height').handleScreenHeight();
     $.scrollify({
@@ -15,4 +35,11 @@ $(function(){
         standardScrollElements: '.no-scroll',
         offset: 0
     });
+    // $('.topnav-links').handleScrolling();
+    window.addEventListener('hashchange', function() {
+        goToSection();
+    });
+    $(document).ready(function() {
+        goToSection();
+    })
 })

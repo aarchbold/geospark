@@ -90,7 +90,7 @@
         }
         &.-blip4 {
             top: 101%;
-            right: 8%;
+            right: 14%;
             animation: feature-pulse 4s infinite;
         }
     }
@@ -188,9 +188,8 @@
 .event-cards__container {
     position: absolute;
     width: 50%;
-    top: 50%;
+    top: 65%;
     left: 50%;
-    transform: translateY(-50%);
     max-width: 600px;
 }
 
@@ -320,4 +319,29 @@
 }
 
 // media queries
-@media (max-width: 650px) {}
+@media (max-width: 800px) {
+    .feature-hotspots__map {
+        display: none;
+    }
+    .features-section__content {
+        padding: 120px 0px;
+        &.-inverse {
+            padding: 120px 0px;
+        }
+    }
+    .feature-section__forecasting-bg {
+        img {
+            height: 160px;
+        }
+    }
+    .features-section__pulse {
+        display: none;
+        width: 100%;
+        right: auto;
+        top: auto;
+        bottom: 160px;
+    }
+    .event-cards__container {
+        display: none;
+    }
+}

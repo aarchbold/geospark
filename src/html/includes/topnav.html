@@ -6,29 +6,29 @@
                 <ul class="topnav-links">
                     <li><a @@if (section === 'home') {class="topnav-links__item -active"} @@if (section !== 'home') {class="topnav-links__item"} href="/">Home</a></li>
                     <li>
-                        <a @@if (section === 'features') {class="topnav-links__item -active topnav-dropdown__trigger"} @@if (section !== 'features') {class="topnav-links__item topnav-dropdown__trigger"} href="#">Features</a>
+                        <a @@if (section === 'features') {class="topnav-links__item -active topnav-dropdown__trigger"} @@if (section !== 'features') {class="topnav-links__item topnav-dropdown__trigger"} href="features.html#hotspots">Features</a>
                         <div class="topnav-dropdown">
                             <ul class="topnav-dropdown__list">
                                 <li class="topnav-dropdown__item">
-                                    <a href="features.html#hotspots">
+                                    <a class="go-to-link" href="features.html#hotspots">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-hotspots.svg" />
                                         Hotspots
                                     </a>
                                 </li>
                                 <li class="topnav-dropdown__item">
-                                    <a href="features.html#forecasting">
+                                    <a class="go-to-link" href="features.html#forecasting">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-forecasting.svg" />
                                         Forecasting
                                     </a>
                                 </li>
                                 <li class="topnav-dropdown__item">
-                                    <a href="features.html#pulse">
+                                    <a class="go-to-link" href="features.html#pulse">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-pulse.svg" />
                                         Pulse
                                     </a>
                                 </li>
                                 <li class="topnav-dropdown__item">
-                                    <a href="features.html#events">
+                                    <a class="go-to-link" href="features.html#events">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-events.svg" />
                                         Events
                                     </a>

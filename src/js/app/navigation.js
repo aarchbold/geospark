@@ -48,7 +48,8 @@ $.fn.handleDropDowns = function() {
     var $context = $(this),
         $triggers = $('.topnav-dropdown__trigger', $context);
 
-    $triggers.click(function() {
+    $triggers.click(function(e) {
+        e.preventDefault();
         var $parent = $(this).parent();
         console.log($parent);
         if ($parent.hasClass('-active')) {
