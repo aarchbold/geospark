@@ -90,9 +90,11 @@ $.fn.handleScrolling = function() {
 
 goToSection = function() {
     var el = $("div[data-target='" + window.location.hash +"']");
-    $('html, body').animate({
-        scrollTop: el.offset().top
-    },300);
+    if (el.length) {
+        $('html, body').animate({
+            scrollTop: el.offset().top
+        },300);
+    }
 }
 
 $(function(){

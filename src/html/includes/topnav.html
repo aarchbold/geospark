@@ -36,10 +36,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a class="topnav-links__item" href="#">Videos</a></li>
+                    <li><a @@if (section === 'videos') {class="topnav-links__item -active"} @@if (section !== 'videos') {class="topnav-links__item"} href="videos.html">Videos</a></li>
                     <li>
-                        <a class="topnav-links__item topnav-dropdown__trigger" href="#">About</a>
-                        <div class="topnav-dropdown">
+                        <a class="topnav-links__item" href="about.html">About</a>
+                        <!-- <div class="topnav-dropdown">
                             <ul class="topnav-dropdown__list">
                                 <li class="topnav-dropdown__item">
                                     <a href="#">
@@ -54,7 +54,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </li>
                     <li><a class="topnav-links__item" href="#">Blog</a></li>
                     <li><a class="button button-topnav" href="#">Sign Up | Login</a></li>
