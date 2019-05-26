@@ -31,6 +31,9 @@ function debounce(func, wait, immediate) {
 };
 
 function isElementInViewport (el) {
+    if (!el || el.length < 1) {
+        return false;
+    }
     //special bonus for those using jQuery
     if (typeof jQuery !== 'undefined' && el instanceof jQuery) el = el[0];
 

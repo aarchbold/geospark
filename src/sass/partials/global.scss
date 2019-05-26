@@ -34,6 +34,9 @@ a {
     &.-inverse {
         color: $color-main-inverse;
     }
+    &.-about-section {
+        font-size: 40px;
+    }
 }
 
 .page-h2__hr {
@@ -56,6 +59,13 @@ a {
     &.-inverse {
         color: $color-main-inverse;
     }
+}
+
+.page-description {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 1.3;
 }
 
 .section-cta {

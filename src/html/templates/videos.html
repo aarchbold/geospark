@@ -1,0 +1,37 @@
+<div id="videos">
+</div>
+
+<script id="videos-template" type="text/x-handlebars-template">
+    {{#each videos}}
+        <section class="video-section">
+            <div class="embed-container">
+                <iframe src="{{this.url}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2 class="video-title">{{this.title}}</h2>
+            <div class="video-description">{{this.description}}</div>
+        </section>
+    {{/each}}
+</script>
+
+<script type="text/javascript">
+    var data = {
+        // the below content populates the home page carousel
+        // if you want to add a new testimonial, just add a new object
+        // don't forget the comma after each object
+        videos: [
+            {
+                url: "https://www.youtube.com/embed/Tx0dUDrh_hE",
+                title: "What is Hyperion?",
+                description: "Hyperion’s trained machine learning algorithms analyze information from breaking news, social media, space and IoT channels and continually updates global stability and activity levels at country, region and city levels. Hyperion’s artificial intelligence defines patterns of normal human activity across the globe and alerts users to abnormal patterns informing organizations what is happening and why."
+            },
+            {
+                url: "https://www.youtube.com/embed/Ws4908LsEAo",
+                title: "Video #2",
+                description: "Hello World"
+            }
+        ]
+    };
+    var template = Handlebars.compile(document.getElementById('videos-template').innerHTML);
+    var videosData = template(data);
+    document.getElementById('videos').innerHTML += videosData;
+</script>

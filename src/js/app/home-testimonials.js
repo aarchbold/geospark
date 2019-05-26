@@ -1,5 +1,6 @@
 $(function(){
-    $('#homeTestimonial').slick({
+    if ($('#homeTestimonial').length > 0) {
+      $('#homeTestimonial').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -9,4 +10,5 @@ $(function(){
         cssEase: 'linear',
         dotsClass: 'home-carousel__dots'
       });
+    }
 })

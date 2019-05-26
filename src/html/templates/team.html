@@ -1,0 +1,49 @@
+<div id="team">
+</div>
+
+<script id="team-template" type="text/x-handlebars-template">
+    {{#each team}}
+        <div class="team-column">
+            <div class="team-item">
+                <div class="team-item__image" style="background-image:url({{this.imageUrl}});"></div>
+                <div class="team-item__content">
+                    <h2 class="team-item__name">{{this.name}}</h2>
+                    <p class="team-item__position">{{this.description}}</p>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript">
+    var data = {
+        // the below content populates the team section on the about page
+        // if you want to add a new team member, just add a new object
+        // don't forget the comma after each object
+        team: [
+            {
+                imageUrl: "static/images/ui/testimonials/dana.jpg",
+                name: "Dana Danerssen",
+                description: "Founder - CEO"
+            },
+            {
+                imageUrl: "static/images/ui/testimonials/dana.jpg",
+                name: "Dana Danerssen",
+                description: "Founder - CEO"
+            },
+            {
+                imageUrl: "static/images/ui/testimonials/dana.jpg",
+                name: "Dana Danerssen",
+                description: "Founder - CEO"
+            },
+            {
+                imageUrl: "static/images/ui/testimonials/dana.jpg",
+                name: "Dana Danerssen",
+                description: "Founder - CEO"
+            }
+        ]
+    };
+    var template = Handlebars.compile(document.getElementById('team-template').innerHTML);
+    var teamData = template(data);
+    document.getElementById('team').innerHTML += teamData;
+</script>
