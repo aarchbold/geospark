@@ -46,20 +46,32 @@ $.fn.handleTopNav = function() {
 
 $.fn.handleDropDowns = function() {
     var $context = $(this),
-        $triggers = $('.topnav-dropdown__trigger', $context);
+        $triggers = $('.topnav-dropdown__trigger', $context),
+        $dropdownlinks = $('.topnav-dropdown__list a', $context);
 
     $triggers.click(function(e) {
         e.preventDefault();
         var $parent = $(this).parent();
-        console.log($parent);
-        if ($parent.hasClass('-active')) {
+        var $dropdown = $('.topnav-dropdown', $parent);
+
+        console.log($dropdown.hasClass('-active'))
+
+        if ($dropdown.hasClass('-active')) {
             $parent.removeClass('-active');
-            $('.topnav-dropdown', $parent).fadeOut('fast');
+            $dropdown.removeClass('-active');
+            $dropdown.fadeOut('fast');
         } else {
             $parent.addClass('-active');
-            $('.topnav-dropdown', $parent).fadeIn('fast');
+            $dropdown.addClass('-active');
+            $dropdown.fadeIn('fast');
         }
     });
+
+    $dropdownlinks.click(function() {
+        var $dropdown = $(this).closest('.topnav-dropdown');
+        $dropdown.removeClass('-active');
+        $dropdown.fadeOut('fast');
+    })
 }
 
 $(function(){
