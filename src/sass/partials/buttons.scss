@@ -24,10 +24,12 @@ button, .button {
     }
     &.button-hotspots {
         background-color: $bg-color-feature-hotspots;
+        color: $color-main-font;
         box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     }
     &.button-forecasting {
         background-color: $bg-color-feature-forecasting;
+        color: $color-main-font;
         box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     }
     &.button-pulse {
@@ -37,6 +39,7 @@ button, .button {
     }
     &.button-events {
         background-color: $bg-color-feature-events;
+        color: $color-main-font;
         box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     }
     &.button-signup {
