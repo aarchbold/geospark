@@ -37,6 +37,7 @@ $(function(){
         sectionName : 'section-name',
         setHeights: false,
         //standardScrollElements: '.no-scroll',
+        touchScroll: false,
         offset: 0
     });
     $('.topnav-links').handleScrolling();

@@ -76,9 +76,15 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .team-column {
         float: left;
         width: 100%;
+    }
+    .team-item__image {
+        background-position: 50% 52%;
+    }
+    .team-item {
+        margin: 10px 0;
     }
 }
