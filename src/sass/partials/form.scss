@@ -15,6 +15,21 @@
         outline: none;
         border: 1px solid $color-play-button;
     }
+    &.error {
+        border: 1px solid red;
+    }
+}
+
+.error-container {
+    display: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+    color: red;
+}
+
+.form-error {
+    display: none;
 }
 
 select {
@@ -45,3 +60,9 @@ select {
     white-space: nowrap;
 }
 
+
+#signupForm {}
+
+#signupSuccess {
+    display: none;
+}
