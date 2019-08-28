@@ -10,6 +10,12 @@
                         <div class="topnav-dropdown">
                             <ul class="topnav-dropdown__list">
                                 <li class="topnav-dropdown__item">
+                                    <a class="go-to-link" href="features.html#pulse">
+                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-pulse.svg" />
+                                        Pulse
+                                    </a>
+                                </li>
+                                <li class="topnav-dropdown__item">
                                     <a class="go-to-link" href="features.html#hotspots">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-hotspots.svg" />
                                         Hotspots
@@ -22,23 +28,47 @@
                                     </a>
                                 </li>
                                 <li class="topnav-dropdown__item">
-                                    <a class="go-to-link" href="features.html#pulse">
-                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-pulse.svg" />
-                                        Pulse
-                                    </a>
-                                </li>
-                                <li class="topnav-dropdown__item">
                                     <a class="go-to-link" href="features.html#events">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-events.svg" />
                                         Events
                                     </a>
                                 </li>
+                                <li class="topnav-dropdown__item">
+                                    <a class="go-to-link" href="features.html#alerts">
+                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-alerts.svg" />
+                                        Alerts
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <li><a @@if (section === 'videos') {class="topnav-links__item -active"} @@if (section !== 'videos') {class="topnav-links__item"} href="videos.html">Videos</a></li>
+                    <!-- <li><a @@if (section === 'videos') {class="topnav-links__item -active"} @@if (section !== 'videos') {class="topnav-links__item"} href="videos.html">Videos</a></li> -->
+                    <li>
+                        <a @@if (section === 'media') {class="topnav-links__item -active topnav-dropdown__trigger"} @@if (section !== 'media') {class="topnav-links__item topnav-dropdown__trigger"} href="media.html">Media</a>
+                        <div class="topnav-dropdown">
+                            <ul class="topnav-dropdown__list">
+                                <li class="topnav-dropdown__item">
+                                    <a href="https://blog.geospark.io">
+                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-videos.svg" />
+                                        Videos
+                                    </a>
+                                </li>
+                                <li class="topnav-dropdown__item">
+                                    <a href="https://blog.geospark.io">
+                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-press.svg" />
+                                        Press
+                                    </a>
+                                </li>
+                                <li class="topnav-dropdown__item">
+                                    <a href="https://blog.geospark.io" target="_blank">
+                                        <img class="topnav-dropdown__icon" src="static/images/icons/icon-blog.svg" />
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a @@if (section === 'about') {class="topnav-links__item -active"} @@if (section !== 'about') {class="topnav-links__item"} href="about.html">About</a></li>
-                    <li><a class="topnav-links__item" href="https://blog.geospark.io" target="_blank">Blog</a></li>
                     <li><a class="button button-topnav" href="https://hyperion.geospark.io/login" target="_blank">Sign Up | Login</a></li>
                 </ul>
             </div>

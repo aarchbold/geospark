@@ -14,9 +14,9 @@ $hyperion-map-width: 30%;
 .home-intro__background {
     position: absolute;
     right: 0;
-    top: 240px;
-    width: 46%;
-    max-width: 550px;
+    top: 160px;
+    width: 56%;
+    max-width: 608px;
     img {
         width: 100%;
     }
@@ -245,6 +245,41 @@ $hyperion-map-width: 30%;
     display: inline-block;
     margin: 30px 0 40px;
     text-decoration: none;
+}
+
+.home-featured-items {
+    padding-top: 100px;
+}
+
+.home-featured-items__header {
+    font-size: 20px;
+}
+
+.home-featured-items__row {
+    padding-top: 40px;
+    margin: 0 -2%;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.home-featured-item {
+    float: left;
+    width: 25%;
+    min-height: 50px;
+    text-align: center;
+}
+
+.home-featured-item__inner {
+    width: 80%;
+    border: 1px solid $border-images;
+    margin: 0 auto;
+    border-radius: 12px;
+    img {
+        width: 100%;
+    }
 }
 
 // mobile styles

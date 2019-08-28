@@ -51,19 +51,16 @@ $.fn.handleDropDowns = function() {
 
     $triggers.click(function(e) {
         e.preventDefault();
-        var $parent = $(this).parent();
-        var $dropdown = $('.topnav-dropdown', $parent);
+        var $lists = $('.topnav-links li'),
+            $parent = $(this).parent(),
+            $dropdown = $('.topnav-dropdown', $parent);
 
-        console.log($dropdown.hasClass('-active'))
-
-        if ($dropdown.hasClass('-active')) {
+        if ($parent.hasClass('-active')) {
             $parent.removeClass('-active');
-            $dropdown.removeClass('-active');
-            $dropdown.fadeOut('fast');
+
         } else {
+            $lists.removeClass('-active');
             $parent.addClass('-active');
-            $dropdown.addClass('-active');
-            $dropdown.fadeIn('fast');
         }
     });
 

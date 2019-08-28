@@ -71,8 +71,16 @@ $.fn.handleSignUp = function() {
         e.preventDefault();
         resetErrors();
         if (isFromValid()) {
-            $signupForm.hide();
-            $signupSuccess.show();
+            $.ajax({
+                url: 'https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/5391972/242a5fc0-bc05-477d-8199-bb7aa6afa176',
+                type: 'POST',
+                data: $('#trialForm').serialize(),
+                contentType: 'application/x-www-form-urlencoded',
+                success: function(data) {
+                    $signupForm.hide();
+                    $signupSuccess.show();
+                }
+            });
         } 
     })
 }

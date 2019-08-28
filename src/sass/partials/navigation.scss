@@ -76,12 +76,17 @@ nav {
                 margin-left: 40px;
             }
         }
+        &.-active {
+            .topnav-dropdown {
+                display: block !important;
+            }
+        }
     }
 }
 
 .topnav-dropdown {
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 50%;
     min-width: 160px;
     transform: translateX(-50%);
@@ -170,6 +175,14 @@ footer {
     p {
         margin-bottom: 20px;
     }
+    a {
+        transition: all 0.3s;
+        color: $color-nav-links;
+        text-decoration: none;
+        &:hover {
+            color: $color-nav-links-hover;
+        }
+    }
 }
 
 .footer-icon {
@@ -181,7 +194,8 @@ footer {
 }
 
 .footer-row {
-    margin-bottom: 40px;
+    position: relative;
+    margin-bottom: 20px;
     &:after {
         content: '';
         clear: both;
@@ -195,7 +209,7 @@ footer {
 }
 
 .footer-col__legal {
-    float: left;
+    float: right;
     width: 37%;
 }
 
@@ -212,6 +226,10 @@ footer {
 
 .footer-legal-text {
     font-family: 'TruenoUltraLight', sans-serif;
+    color: $color-nav-links;
+    opacity: 0.6;
+    float: left;
+    width: 63%;
     a {
         transition: all 0.3s;
         color: $color-nav-links;
@@ -221,9 +239,45 @@ footer {
     }
 }
 
+.footer-legal-text__inner {
+    position: absolute;
+    bottom: 20px;
+    width: 60%;
+}
+
+.footer-buttons {
+    img {
+        transition: all 0.4s;
+        width: 168px;
+        display: block;
+        margin-bottom: 10px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
 // Mobile
 
 @media (max-width: $breakpoint-mobile-nav) {
+    footer {
+        padding-bottom: 20px;
+    }
+    .footer-legal-text {
+        width: 100%;
+    }
+    .footer-legal-text__inner, .footer-buttons {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-buttons {
+        img {
+            width: 168px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    }
     .topnav-mobile-cta {
         display: block;
         .topnav-mobile-cta__open {
@@ -298,6 +352,14 @@ footer {
     .topnav-dropdown__icon {
         left: auto;
         right: -5px;
+    }
+}
+
+@media (max-width: $breakpoint-phone) {
+    .footer-buttons {
+        img {
+            width: 130px;
+        }
     }
 }
 
