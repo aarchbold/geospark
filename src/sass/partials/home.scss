@@ -278,7 +278,12 @@ $hyperion-map-width: 30%;
     margin: 0 auto;
     border-radius: 12px;
     img {
+        transition: all 0.4s;
         width: 100%;
+        &:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
     }
 }
 

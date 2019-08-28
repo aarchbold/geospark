@@ -791,7 +791,12 @@ footer {
   border-radius: 12px;
 }
 .home-featured-item__inner img {
+  transition: all 0.4s;
   width: 100%;
+}
+.home-featured-item__inner img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 @media (max-width: 990px) {
