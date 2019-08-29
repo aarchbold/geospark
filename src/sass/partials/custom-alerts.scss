@@ -16,9 +16,9 @@
 .text-alerts__container {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 34%;
+    top: 35%;
+    width: 90%;
+    z-index: 10;
 }
 
 .text-alert {
@@ -38,7 +38,7 @@
         top: 0;
         left: 0;
         opacity: 1;
-        transform: translate(50px,-50px);
+        transform: translate(40%,0%);
         z-index: 3;
     }
     &.-position2 {
@@ -46,7 +46,7 @@
         top: 0;
         left: 0;
         opacity: 0.5;
-        transform: translate(-40px,-10px) scale(0.75);
+        transform: translate(0%,40%) scale(0.75);
         z-index: 2;
     }
     &.-position3 {
@@ -54,7 +54,7 @@
         top: 0;
         left: 0;
         opacity: 0.5;
-        transform: translate(56px, -97px) scale(0.75);
+        transform: translate(90%, -40%) scale(0.75);
         z-index: 1;
     }
 }

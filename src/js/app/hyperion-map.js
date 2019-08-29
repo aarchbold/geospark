@@ -5,7 +5,8 @@ $.fn.handleHyperionMap = function() {
         $triggers = $('.home-hyperion__list--item', $context),
         $panels = $('.hyperion-panel', $context),
         $outlines = $('.-outline', $context),
-        $days = $('.hyperion-forecast__label', $context);
+        $days = $('.hyperion-forecast__label', $context),
+        $eventsTable = $('.hyperion-events__types', $context);
 
     function initOutlineFade() {
         var timer = 0;
@@ -32,6 +33,33 @@ $.fn.handleHyperionMap = function() {
                 $(e).css('opacity','1');
             },timer)
         })
+
+    }
+
+    function initEventsFade() {
+        $('.hyperion-events__line').css('opacity','0')
+        $('.hyperion-events__item--inner').removeClass('-active')
+        $eventsTable.css('opacity','0')
+        setTimeout(function() {
+            $eventsTable.css('opacity','1')
+        },200)
+        setTimeout(function() {
+            $('.hyperion-events__item--inner:eq(1)').addClass('-active')
+        },1000)
+        setTimeout(function() {
+            $('.hyperion-events__item--inner:eq(2)').addClass('-active')
+        },1200)
+
+        setTimeout(function() {
+            $('.hyperion-events__line:eq(0)').css('opacity','1')
+        },1600)
+        setTimeout(function() {
+            $('.hyperion-events__line:eq(1)').css('opacity','1')
+        },2000)
+        setTimeout(function() {
+            $('.hyperion-events__line:eq(2)').css('opacity','1')
+        },2400)
+        
     }
 
 
@@ -51,7 +79,12 @@ $.fn.handleHyperionMap = function() {
         if ($(this).attr('data-target') === 'panelForecast') {
             initForecastFade();
         }
+        if ($(this).attr('data-target') === 'panelEvents') {
+            initEventsFade();
+        }
     });
+
+    initOutlineFade();
 }
 
 $(function(){
