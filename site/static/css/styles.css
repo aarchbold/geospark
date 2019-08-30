@@ -1059,6 +1059,91 @@ footer {
     opacity: 0;
   }
 }
+/* hyperion styles
+*/
+.home-hyperion-items {
+  padding-top: 100px;
+}
+
+.home-hyperion-items__header {
+  font-size: 20px;
+}
+
+.home-hyperion-items__row {
+  padding-top: 40px;
+  margin: 0 -4%;
+}
+.home-hyperion-items__row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.home-hyperion-item {
+  float: left;
+  width: 33.3%;
+  min-height: 50px;
+  text-align: center;
+}
+
+.home-hyperion-item__inner {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 20px 0;
+  min-height: 260px;
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+  margin-bottom: 60px;
+}
+.home-hyperion-item__inner:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: 1;
+  background: white;
+  color: #000000;
+}
+.home-hyperion-item__inner:hover .home-hyperion-item__images img.-hover {
+  opacity: 1;
+}
+
+.home-hyperion-item__images {
+  position: relative;
+  height: 90px;
+  margin-bottom: 10px;
+}
+.home-hyperion-item__images img {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.home-hyperion-item__images img.-hover {
+  opacity: 0;
+}
+
+.home-hyperion-item__header {
+  font-size: 28px;
+  font-family: 'TruenoBold', sans-serif;
+}
+
+.home-hyperion-item__body {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 /* button styles
 */
 button, .button {
@@ -1242,12 +1327,35 @@ button.button-signup, .button.button-signup {
 }
 
 .get-started-h2 {
-  font-size: 34px;
+  font-size: 28px;
+  font-family: 'TruenoRegular', sans-serif;
+  line-height: 1.4;
 }
 
 .section-getting-started {
   text-align: center;
-  padding: 100px 0 120px;
+  padding: 80px 0 80px;
+}
+
+.get-started__row {
+  padding: 100px 0 40px;
+}
+.get-started__row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.get-started__item {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+
+.get-started__item--header {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top: 20px;
 }
 
 /* testimonial styles
