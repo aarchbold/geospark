@@ -3,7 +3,7 @@
 $.fn.handleSignUp = function() {
     var $trigger = $(this),
         $signupContainer = $('.signup-container'),
-        $overlay = $('.signup-overlay', $signupContainer),
+        $overlay = $('.signup-overlay'),
         $content = $('.signup-content', $signupContainer),
         $closeBtn = $('.signup-close', $signupContainer),
         $name = $('#fullName', $signupContainer),
@@ -55,17 +55,31 @@ $.fn.handleSignUp = function() {
 
     $trigger.click(function(e) {
         e.preventDefault();
+        $('body').css('overflow','hidden');
         $signupContainer.show(0,function(){
             $content.fadeIn();
+            $overlay.fadeIn();
         });
     });
 
     $closeBtn.click(function(e) {
         e.preventDefault();
+        $('body').css('overflow','auto');
         $content.fadeOut(400,function() {
             $signupContainer.hide();
+            $overlay.hide();
         })
     });
+
+    $signupContainer.click(function(e) {
+        $('body').css('overflow','auto');
+        if(e.target == this){
+            $content.fadeOut(400,function() {
+                $signupContainer.hide();
+                $overlay.hide();
+            })
+        }
+    })
 
     $submit.click(function(e) {
         e.preventDefault();
@@ -79,6 +93,9 @@ $.fn.handleSignUp = function() {
                 success: function(data) {
                     $signupForm.hide();
                     $signupSuccess.show();
+                },
+                error: function(data) {
+                    alert('Error submitting form. Please try again later.');
                 }
             });
         } 
