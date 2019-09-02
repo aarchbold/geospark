@@ -134,6 +134,21 @@ a {
   margin-top: 60px;
 }
 
+.header-icons {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-icons img {
+  width: 30px;
+  margin-right: 10px;
+}
+.header-icons a {
+  transition: all 0.4s;
+}
+.header-icons a:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 650px) {
   .page-h1 {
     font-size: 50px;
@@ -1092,6 +1107,11 @@ button.button-signup, .button.button-signup {
   color: #ffffff;
   box-shadow: 1px 4px 8px 1px rgba(33, 196, 208, 0.2);
 }
+button.button-api, .button.button-api {
+  background-color: #CDCDD6;
+  color: #000000;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
 
 .button-icon {
   position: absolute;
@@ -1231,6 +1251,34 @@ button.button-signup, .button.button-signup {
   text-transform: uppercase;
   font-size: 18px;
   padding-top: 20px;
+}
+.get-started__item--header a {
+  text-decoration: none;
+}
+
+/* getting started styles
+*/
+.investors__row {
+  padding: 0 0 20px;
+}
+.investors__row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.investors__item {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.investors__item img {
+  width: 60%;
+  max-width: 300px;
+}
+.investors__item img.-gc {
+  position: relative;
+  top: 20px;
 }
 
 /* testimonial styles
@@ -1405,6 +1453,11 @@ button.button-signup, .button.button-signup {
 .hyperion-facts__label {
   padding-top: 10px;
   font-size: 18px;
+}
+.hyperion-facts__label p {
+  max-width: 200px;
+  display: inline-block;
+  line-height: 1.2;
 }
 
 @media (max-width: 650px) {
@@ -1705,10 +1758,28 @@ button.button-signup, .button.button-signup {
 }
 
 .feature-alerts__image {
+  transition: all 0.8s;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 55%;
   width: 450px;
+  transform: translate(-200%, -50%);
+}
+.feature-alerts__image.-animate-me {
+  transform: translate(0, -50%);
+}
+
+.feature-section__api {
+  background-color: #F0F0F5;
+  color: #000000;
+}
+
+.feature-api__image {
+  max-width: 500px;
+  width: 35%;
+  position: absolute;
+  right: 58%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -1867,6 +1938,7 @@ button.button-signup, .button.button-signup {
   background-color: #ffffff;
   min-height: 200px;
   box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
 }
 
 .team-item__name {

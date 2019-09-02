@@ -79,6 +79,11 @@
 .hyperion-facts__label {
     padding-top: 10px;
     font-size: 18px;
+    p {
+        max-width: 200px;
+        display: inline-block;
+        line-height: 1.2;
+    }
 }
 
 @media (max-width: 650px) {

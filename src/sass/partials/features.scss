@@ -271,10 +271,28 @@
 }
 
 .feature-alerts__image {
+    transition: all 0.8s;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 55%;
     width: 450px;
+    transform: translate(-200%, -50%);
+    &.-animate-me {
+        transform: translate(0, -50%);
+    }
+}
+
+.feature-section__api {
+    background-color: $bg-color-feature-api;
+    color: $color-main-inverse;
+}
+
+.feature-api__image {
+    max-width: 500px;
+    width: 35%;
+    position: absolute;
+    right: 58%;
+    top: 50%;
     transform: translateY(-50%);
 }
 

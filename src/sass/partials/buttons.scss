@@ -52,6 +52,11 @@ button, .button {
         color: $color-main-font;
         box-shadow: 1px 4px 8px 1px rgba(33,196,208,0.2);
     }
+    &.button-api {
+        background-color: $color-api;
+        color: $color-main-inverse;
+        box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    }
 }
 
 .button-icon {

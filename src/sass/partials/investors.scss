@@ -1,0 +1,29 @@
+/* getting started styles
+*/
+
+// vars
+
+// styles
+
+.investors__row {
+    padding: 0 0 20px;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.investors__item {
+    float: left;
+    width: 50%;
+    text-align: center;
+    img {
+        width: 60%;
+        max-width: 300px;
+        &.-gc {
+            position: relative;
+            top: 20px;
+        }
+    }
+}
