@@ -112,4 +112,19 @@
     .hyperion-facts__label {
         font-size: 16px;
     }
+    .hyperion-facts__subheader {
+        padding-bottom: 50px;
+    }
+    .hyperion-facts {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hyperion-facts__comparison--row {
+        font-size: 26px;
+    }
+    .hyperion-facts__label {
+        font-size: 14px;
+    }
 }

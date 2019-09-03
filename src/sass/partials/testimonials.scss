@@ -73,6 +73,9 @@
 }
 
 @media (max-width: 650px) {
+    .testimonial-name {
+        font-size: 34px;
+    }
     .section-testimonials__header {
         padding: 60px 0;
     }
@@ -94,5 +97,8 @@
         right: auto;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .testimonial-bio {
+        font-size: 18px;
     }
 }

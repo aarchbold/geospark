@@ -82,4 +82,35 @@
     line-height: 1.4;
 }
 
+@media (max-width: 800px) {
+    .home-hyperion-item {
+        float: left;
+        width: 50%;
+        min-height: 50px;
+    }
+    .home-hyperion-item__inner {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 525px) {
+    .home-hyperion-item {
+        float: none;
+        width: 100%;
+        min-height: 50px;
+    }
+    .home-hyperion-item__inner {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .home-hyperion-items__row {
+        margin: 0;
+    }
+}
+
+
+
+
+
 

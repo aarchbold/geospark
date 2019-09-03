@@ -151,7 +151,15 @@ a {
 
 @media (max-width: 650px) {
   .page-h1 {
-    font-size: 50px;
+    font-size: 38px;
+  }
+
+  .page-h2 {
+    font-size: 36px;
+  }
+
+  .page-subheader {
+    font-size: 20px;
   }
 }
 /* navigation styles
@@ -519,10 +527,12 @@ footer {
 }
 
 .page-inner {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
+  height: 100%;
 }
 
 @media (max-width: 400px) {
@@ -533,16 +543,17 @@ footer {
 /* home styles
 */
 .home-intro {
-  margin-top: 240px;
-  min-height: 500px;
   padding-right: 34%;
   box-sizing: border-box;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 .home-intro__background {
   position: absolute;
   right: 0;
-  top: 160px;
+  top: 0;
   width: 56%;
   max-width: 608px;
 }
@@ -552,6 +563,8 @@ footer {
 
 .home-video__cta {
   padding-top: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .home-hyperion {
@@ -919,6 +932,15 @@ footer {
     line-height: 1.8;
   }
 }
+@media (max-width: 750px) {
+  .home-featured-item {
+    float: left;
+    width: 50%;
+    min-height: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 650px) {
   .home-hyperion__container {
     min-height: auto;
@@ -943,6 +965,10 @@ footer {
   .home-intro {
     padding-right: 0;
     min-height: auto;
+    left: 0;
+    right: 0;
+    top: 180px;
+    transform: translateY(0);
   }
 
   .home-hyperion .page-subheader {
@@ -950,7 +976,12 @@ footer {
   }
 
   .home-intro__background {
-    display: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 80%;
+    margin: 0 auto;
+    bottom: -40px;
   }
 
   .home-intro .page-h1, .home-intro .page-subheader, .home-intro .home-video__cta {
@@ -1053,6 +1084,34 @@ footer {
   line-height: 1.4;
 }
 
+@media (max-width: 800px) {
+  .home-hyperion-item {
+    float: left;
+    width: 50%;
+    min-height: 50px;
+  }
+
+  .home-hyperion-item__inner {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 525px) {
+  .home-hyperion-item {
+    float: none;
+    width: 100%;
+    min-height: 50px;
+  }
+
+  .home-hyperion-item__inner {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .home-hyperion-items__row {
+    margin: 0;
+  }
+}
 /* button styles
 */
 button, .button {
@@ -1256,6 +1315,21 @@ button.button-api, .button.button-api {
   text-decoration: none;
 }
 
+@media (max-width: 650px) {
+  .get-started-h2 {
+    font-size: 24px;
+  }
+
+  .get-started__item .get-started__item--platform {
+    width: 55px;
+  }
+  .get-started__item .get-started__item--mobile {
+    width: 32px;
+  }
+  .get-started__item .get-started__item--api {
+    width: 66px;
+  }
+}
 /* getting started styles
 */
 .investors__row {
@@ -1281,6 +1355,19 @@ button.button-api, .button.button-api {
   top: 20px;
 }
 
+@media (max-width: 650px) {
+  .investors__item {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .investors__item img {
+    width: 80%;
+    max-width: 100%;
+  }
+  .investors__item img.-gc {
+    top: 0;
+  }
+}
 /* testimonial styles
 */
 .section-testimonials__header {
@@ -1350,6 +1437,10 @@ button.button-api, .button.button-api {
 }
 
 @media (max-width: 650px) {
+  .testimonial-name {
+    font-size: 34px;
+  }
+
   .section-testimonials__header {
     padding: 60px 0;
   }
@@ -1374,6 +1465,10 @@ button.button-api, .button.button-api {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .testimonial-bio {
+    font-size: 18px;
   }
 }
 /* facts styles
@@ -1488,6 +1583,23 @@ button.button-api, .button.button-api {
 
   .hyperion-facts__label {
     font-size: 16px;
+  }
+
+  .hyperion-facts__subheader {
+    padding-bottom: 50px;
+  }
+
+  .hyperion-facts {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .hyperion-facts__comparison--row {
+    font-size: 26px;
+  }
+
+  .hyperion-facts__label {
+    font-size: 14px;
   }
 }
 /* features 
@@ -1856,6 +1968,12 @@ button.button-api, .button.button-api {
   }
 
   .event-cards__container {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .feature-alerts__image {
+    width: 30%;
     display: none;
   }
 }

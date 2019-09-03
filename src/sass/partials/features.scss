@@ -376,3 +376,10 @@
         display: none;
     }
 }
+
+@media (max-width: 650px) {
+    .feature-alerts__image {
+        width: 30%;
+        display: none;
+    }
+}
