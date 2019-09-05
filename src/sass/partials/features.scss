@@ -382,4 +382,27 @@
         width: 30%;
         display: none;
     }
+    .feature-api__image {
+        max-width: 500px;
+        width: 65%;
+        position: absolute;
+        right: auto;
+        top: 79%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0.6;
+    }
+    .feature-section__api {
+        .features-section__content {
+            padding: 120px 0px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .feature-section__api {
+        .features-section__content {
+            padding: 90px 0px;
+        }
+    }
 }

@@ -453,6 +453,18 @@ $hyperion-map-width: 28%;
             text-align: center;
         }
     }
+    .home-featured-item {
+        margin-bottom: 30px;
+    }
+    .home-featured-item__inner {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .home-featured-item {
+        margin-bottom: 15px;
+    }
 }
 
 // animations
