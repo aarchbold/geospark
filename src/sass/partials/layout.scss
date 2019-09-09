@@ -5,6 +5,9 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    &.page-outer__hero {
+        overflow: visible;
+    }
 }
 
 .page-outer__header {
