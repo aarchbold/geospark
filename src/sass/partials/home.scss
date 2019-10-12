@@ -5,12 +5,12 @@
 $hyperion-map-width: 28%;
 
 .home-intro {
-    //margin-top: 240px;
-    padding-right: 34%;
+    margin-top: 200px;
+    padding-right: 50%;
     box-sizing: border-box;
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
+    //top: 50%;
+    position: relative;
+    //transform: translateY(-50%);
 }
 
 .home-intro__background {
@@ -18,7 +18,7 @@ $hyperion-map-width: 28%;
     right: 0;
     top: 0;
     width: 56%;
-    max-width: 608px;
+    max-width: 530px;
     img {
         width: 100%;
     }
@@ -251,11 +251,17 @@ $hyperion-map-width: 28%;
     text-decoration: none;
 }
 
+.page-outer__featured-users {
+    background-color: $color-bg-alternate;
+    padding-bottom: 100px;
+}
+
 .home-featured-items {
-    padding-top: 100px;
+    //padding-top: 100px;
 }
 
 .home-featured-items__header {
+    color: $color-main-inverse;
     font-size: 20px;
 }
 
@@ -398,6 +404,9 @@ $hyperion-map-width: 28%;
         height: 30px;
         line-height: 1.8;
     }
+    .home-intro {
+        padding-right: 35%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -432,10 +441,10 @@ $hyperion-map-width: 28%;
         min-height: auto;
         left: 0;
         right: 0;
-        top: 180px;
         transform: translateY(0);
     }
     .home-hyperion {
+        margin-top: 70px;
         .page-subheader {
             padding-right: 0;
         }

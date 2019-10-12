@@ -21,26 +21,28 @@ $.fn.handleScrolling = function() {
 }
 
 goToSection = function(section) {
-    // var el = $("div[data-target='" + window.location.hash +"']");
-    $.scrollify.move(window.location.hash);
-    // if (el.length) {
-    //     $('html, body').animate({
-    //         scrollTop: el.offset().top
-    //     },300);
-    // }
+    var el = $("div[data-target='" + window.location.hash +"']");
+    // $.scrollify.move(window.location.hash);
+    setTimeout(function(){
+        if (el.length) {
+            $('html, body').animate({
+                scrollTop: el.offset().top
+            },300);
+        }
+    },100)
 }
 
 $(function(){
     $('.screen-height').handleScreenHeight();
-    $.scrollify({
-        section : '.scroll-me',
-        sectionName : 'section-name',
-        setHeights: false,
-        standardScrollElements: '.no-scroll',
-        touchScroll: false,
-        offset: 0
-    });
-    $('.topnav-links').handleScrolling();
+    // $.scrollify({
+    //     section : '.scroll-me',
+    //     sectionName : 'section-name',
+    //     setHeights: false,
+    //     standardScrollElements: '.no-scroll',
+    //     touchScroll: false,
+    //     offset: 0
+    // });
+    // $('.topnav-links').handleScrolling();
     window.addEventListener('hashchange', function() {
         goToSection();
     });

@@ -47,12 +47,12 @@
                         <a @@if (section === 'media') {class="topnav-links__item -active topnav-dropdown__trigger"} @@if (section !== 'media') {class="topnav-links__item topnav-dropdown__trigger"} href="media.html">Media</a>
                         <div class="topnav-dropdown">
                             <ul class="topnav-dropdown__list">
-                                <li class="topnav-dropdown__item">
+                                <!-- <li class="topnav-dropdown__item">
                                     <a href="https://knowledge.geospark.io/hyperion-videos-overview">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-videos.svg" />
                                         Videos
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="topnav-dropdown__item">
                                     <a href="https://knowledge.geospark.io/press">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-press.svg" />
@@ -60,7 +60,7 @@
                                     </a>
                                 </li>
                                 <li class="topnav-dropdown__item">
-                                    <a href="https://knowledge.geospark.io/" target="_blank">
+                                    <a href="https://blog.geospark.io/" target="_blank">
                                         <img class="topnav-dropdown__icon" src="static/images/icons/icon-blog.svg" />
                                         Blog
                                     </a>
@@ -69,7 +69,7 @@
                         </div>
                     </li>
                     <li><a @@if (section === 'about') {class="topnav-links__item -active"} @@if (section !== 'about') {class="topnav-links__item"} href="about.html">About</a></li>
-                    <li><a class="button button-topnav" href="https://hyperion.geospark.io/login" target="_blank">Sign Up | Login</a></li>
+                    <li><a class="button button-topnav" href="https://hyperion.geospark.io/" target="_blank">Login</a></li>
                 </ul>
             </div>
             <div class="topnav-mobile-cta">

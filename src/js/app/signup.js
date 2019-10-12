@@ -103,5 +103,6 @@ $.fn.handleSignUp = function() {
 }
 
 $(function(){
-    $('.button-trial').handleSignUp();
+    // $('.button-trial').handleSignUp();
+    $('.button-contact').handleSignUp();
 })

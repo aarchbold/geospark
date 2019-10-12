@@ -20,7 +20,7 @@ button, .button {
         position: relative;
         padding-left: 60px !important;
     }
-    &.button-trial {
+    &.button-trial, &.button-testimonial {
         color: $color-nav-links;
         background: $color-signup-button;
     }

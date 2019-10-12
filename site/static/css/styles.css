@@ -75,10 +75,12 @@ a {
 }
 
 .page-h1 {
+  position: relative;
   font-size: 60px;
   line-height: 1.2;
   padding-bottom: 25px;
   font-family: 'TruenoRegular', sans-serif;
+  z-index: 1;
 }
 
 .page-section__h1 {
@@ -151,6 +153,11 @@ a {
   opacity: 0.7;
 }
 
+@media (max-width: 800px) {
+  .page-h1 {
+    font-size: 54px;
+  }
+}
 @media (max-width: 650px) {
   .page-h1 {
     font-size: 38px;
@@ -587,14 +594,11 @@ footer {
 /* home styles
 */
 .home-intro {
-  padding-right: 34%;
+  margin-top: 200px;
+  padding-right: 50%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  top: 50%;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: relative;
 }
 
 .home-intro__background {
@@ -602,7 +606,7 @@ footer {
   right: 0;
   top: 0;
   width: 56%;
-  max-width: 608px;
+  max-width: 530px;
 }
 .home-intro__background img {
   width: 100%;
@@ -856,11 +860,13 @@ footer {
   text-decoration: none;
 }
 
-.home-featured-items {
-  padding-top: 100px;
+.page-outer__featured-users {
+  background-color: #F5F6F8;
+  padding-bottom: 100px;
 }
 
 .home-featured-items__header {
+  color: #000000;
   font-size: 20px;
 }
 
@@ -1013,6 +1019,10 @@ footer {
     height: 30px;
     line-height: 1.8;
   }
+
+  .home-intro {
+    padding-right: 35%;
+  }
 }
 @media (max-width: 750px) {
   .home-featured-item {
@@ -1050,12 +1060,14 @@ footer {
     min-height: auto;
     left: 0;
     right: 0;
-    top: 180px;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
+  .home-hyperion {
+    margin-top: 70px;
+  }
   .home-hyperion .page-subheader {
     padding-right: 0;
   }
@@ -1270,7 +1282,7 @@ button.button-play, .button.button-play {
   position: relative;
   padding-left: 60px !important;
 }
-button.button-trial, .button.button-trial {
+button.button-trial, button.button-testimonial, .button.button-trial, .button.button-testimonial {
   color: #000000;
   background: #ffffff;
 }
@@ -1633,12 +1645,12 @@ button.button-api, .button.button-api {
 /* facts styles
 */
 .page-outer__facts {
-  padding: 60px 0;
+  padding: 60px 0 0;
   background-color: #F5F6F8;
 }
 
 .hyperion-facts {
-  padding: 100px 0;
+  padding: 80px 0;
   color: #000000;
 }
 
@@ -1713,7 +1725,7 @@ button.button-api, .button.button-api {
   font-size: 18px;
 }
 .hyperion-facts__label p {
-  max-width: 200px;
+  max-width: 300px;
   display: inline-block;
   line-height: 1.2;
 }
