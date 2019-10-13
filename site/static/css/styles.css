@@ -1036,6 +1036,7 @@ footer {
 @media (max-width: 650px) {
   .home-hyperion__container {
     min-height: auto;
+    padding-bottom: 0;
   }
 
   .home-hyperion__list {
@@ -1239,6 +1240,11 @@ footer {
   .home-hyperion-item__inner {
     width: 80%;
     margin-bottom: 40px;
+  }
+
+  .screen-height {
+    height: auto !important;
+    padding-bottom: 220px;
   }
 }
 @media (max-width: 525px) {

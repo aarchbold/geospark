@@ -422,6 +422,7 @@ $hyperion-map-width: 28%;
 @media (max-width: 650px) {
     .home-hyperion__container {
         min-height: auto;
+        padding-bottom: 0;
     }
     .home-hyperion__list {
         margin-bottom: 40px;
