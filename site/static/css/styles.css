@@ -1802,15 +1802,20 @@ button.button-api, .button.button-api {
 .feature-section {
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 
 .features-section__content {
   position: relative;
-  padding: 200px 10px 0 55%;
+  padding: 0 10px 0 55%;
   color: #ffffff;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .features-section__content.-inverse {
-  padding: 200px 55% 0 10px;
+  padding: 0 55% 0 10px;
 }
 .features-section__content.-inverse-color {
   color: #000000;
@@ -2121,17 +2126,27 @@ button.button-api, .button.button-api {
 .feature-section__api {
   background-color: #F0F0F5;
   color: #000000;
+  min-height: 600px;
 }
 
 .feature-api__image {
   max-width: 500px;
   width: 35%;
   position: absolute;
-  right: 58%;
+  right: 60%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.feature-api__image.-platform {
+  width: 40%;
+  right: 60%;
+}
+.feature-api__image.-mobile {
+  width: 50%;
+  right: 52%;
+  top: 52%;
 }
 
 @-webkit-keyframes clippy {
@@ -2253,10 +2268,27 @@ button.button-api, .button.button-api {
   }
 
   .features-section__content {
-    padding: 120px 0px;
+    padding: 20px 0px;
+    top: 140px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   .features-section__content.-inverse {
     padding: 120px 0px;
+  }
+
+  .feature-api__image {
+    max-width: 500px;
+    width: 60% !important;
+    position: relative;
+    right: auto !important;
+    top: 170px !important;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 1;
   }
 
   .feature-section__forecasting-bg img {
@@ -2282,25 +2314,8 @@ button.button-api, .button.button-api {
   }
 
   .feature-api__image {
-    max-width: 500px;
-    width: 65%;
-    position: absolute;
-    right: auto;
-    top: 79%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0.6;
-  }
-
-  .feature-section__api .features-section__content {
-    padding: 120px 0px;
-  }
-}
-@media (max-width: 400px) {
-  .feature-section__api .features-section__content {
-    padding: 90px 0px;
+    top: 170px;
+    width: 80% !important;
   }
 }
 /* videos 

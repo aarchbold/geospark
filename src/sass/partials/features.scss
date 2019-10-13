@@ -27,15 +27,18 @@
 .feature-section {
     position: relative;
     z-index: 1;
+    height: 100%;
 }
 
 .features-section__content {
     position: relative;
-    padding: 200px 10px 0 55%;
+    padding: 0 10px 0 55%;
     color: $color-main-font;
+    top: 50%;
+    transform: translateY(-50%);
     &.-inverse {
         // color: $color-main-inverse;
-        padding: 200px 55% 0 10px;
+        padding: 0 55% 0 10px;
     }
     &.-inverse-color {
         color: $color-main-inverse;
@@ -285,15 +288,25 @@
 .feature-section__api {
     background-color: $bg-color-feature-api;
     color: $color-main-inverse;
+    min-height: 600px;
 }
 
 .feature-api__image {
     max-width: 500px;
     width: 35%;
     position: absolute;
-    right: 58%;
+    right: 60%;
     top: 50%;
     transform: translateY(-50%);
+    &.-platform {
+        width: 40%;
+        right: 60%;
+    }
+    &.-mobile {
+        width: 50%;
+        right: 52%;
+        top: 52%;
+    }
 }
 
 
@@ -355,10 +368,22 @@
         display: none;
     }
     .features-section__content {
-        padding: 120px 0px;
+        padding: 20px 0px;
+        top: 140px;
+        transform: translateY(0);
         &.-inverse {
             padding: 120px 0px;
         }
+    }
+    .feature-api__image {
+        max-width: 500px;
+        width: 60% !important;
+        position: relative;
+        right: auto !important;
+        top: 170px !important;
+        left: 50%;
+        transform: translate(-50%,0);
+        opacity: 1;
     }
     .feature-section__forecasting-bg {
         img {
@@ -382,27 +407,21 @@
         width: 30%;
         display: none;
     }
-    .feature-api__image {
-        max-width: 500px;
-        width: 65%;
-        position: absolute;
-        right: auto;
-        top: 79%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        opacity: 0.6;
-    }
     .feature-section__api {
         .features-section__content {
-            padding: 120px 0px;
+            // padding: 120px 0px;
         }
+    }
+    .feature-api__image {
+        top: 170px;
+        width: 80% !important;
     }
 }
 
 @media (max-width: 400px) {
     .feature-section__api {
         .features-section__content {
-            padding: 90px 0px;
+            // padding: 90px 0px;
         }
     }
 }
