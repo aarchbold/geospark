@@ -4,6 +4,7 @@ $(function(){
         dots: true,
         infinite: true,
         speed: 500,
+        autoplaySpeed: 8000,
         arrows: false,
         autoplay: true,
         fade: true,
