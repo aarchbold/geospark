@@ -559,7 +559,7 @@ footer {
 */
 .home-intro {
   margin-top: 200px;
-  padding-right: 50%;
+  padding-right: 5%;
   box-sizing: border-box;
   position: relative;
 }
@@ -567,9 +567,9 @@ footer {
 .home-intro__background {
   position: absolute;
   right: 0;
-  top: 0;
-  width: 56%;
-  max-width: 530px;
+  top: -40px;
+  width: 70%;
+  max-width: 700px;
 }
 .home-intro__background img {
   width: 100%;
@@ -587,7 +587,7 @@ footer {
   box-sizing: border-box;
 }
 .home-hyperion .page-subheader {
-  padding-right: 34%;
+  padding-right: 5%;
 }
 
 .home-hyperion__container {

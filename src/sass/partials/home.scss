@@ -6,7 +6,7 @@ $hyperion-map-width: 28%;
 
 .home-intro {
     margin-top: 200px;
-    padding-right: 50%;
+    padding-right: 5%;
     box-sizing: border-box;
     //top: 50%;
     position: relative;
@@ -16,9 +16,9 @@ $hyperion-map-width: 28%;
 .home-intro__background {
     position: absolute;
     right: 0;
-    top: 0;
-    width: 56%;
-    max-width: 530px;
+    top: -40px;
+    width: 70%;
+    max-width: 700px;
     img {
         width: 100%;
     }
@@ -35,7 +35,7 @@ $hyperion-map-width: 28%;
     min-height: 500px;
     box-sizing: border-box;
     .page-subheader {
-        padding-right: 34%;
+        padding-right: 5%;
     }
 }
 
