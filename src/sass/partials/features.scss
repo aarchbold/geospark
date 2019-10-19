@@ -299,8 +299,10 @@
     top: 50%;
     transform: translateY(-50%);
     &.-platform {
-        width: 40%;
-        right: 60%;
+        max-width: 600px;
+        width: 50%;
+        right: 50%;
+        box-shadow: $event-card-box-shadow;
     }
     &.-mobile {
         width: 50%;

@@ -10,7 +10,7 @@
 }
 
 .hyperion-facts {
-    padding: 80px 0;
+    padding: 60px 0;
     color: $color-main-inverse;
 }
 
@@ -19,8 +19,12 @@
 }
 
 .hyperion-facts__h2 {
-    font-size: 90px;
+    font-size: 26px;
+    line-height: 1.4;
     font-family: 'TruenoRegular', sans-serif;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .hyperion-facts__subheader {
@@ -91,7 +95,7 @@
         padding-bottom: 0;
     }
     .hyperion-facts__h2 {
-        font-size: 50px;
+        font-size: 24px;
     }
 
     .hyperion-facts__header {

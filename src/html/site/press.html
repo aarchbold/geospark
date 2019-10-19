@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        @@include('../includes/header.html', {
+            "title": "Geospark Analytics",
+            "description": "Meta description here..."
+        })
+    </head>
+    <body class="scrollify">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="page-outer">
+            @@include('../includes/topnav.html', {
+                "section": "media"
+            })
+        </div>
+        <div class="page-outer page-outer__header">
+            <div class="page-inner">
+                <div class="page-h1 page-section__h1">Press</div>
+            </div>
+        </div>
+
+        <div class="page-outer">
+            <div class="page-inner">
+
+                <div class="section-about">
+                    <div class="team-container">
+                        @@include('../templates/team.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div>
+            <div class="page-outer">
+                @@include('../includes/footer.html')
+            </div>
+        </div>
+
+        <script src="static/js/app.js?cache=[[busterDouglas]]"></script>
+    </body>
+</html>

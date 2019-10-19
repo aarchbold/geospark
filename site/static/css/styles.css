@@ -1148,7 +1148,7 @@ footer {
 /* hyperion styles
 */
 .home-hyperion-items {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .home-hyperion-items__header {
@@ -1656,7 +1656,7 @@ button.button-api, .button.button-api {
 }
 
 .hyperion-facts {
-  padding: 80px 0;
+  padding: 60px 0;
   color: #000000;
 }
 
@@ -1665,8 +1665,12 @@ button.button-api, .button.button-api {
 }
 
 .hyperion-facts__h2 {
-  font-size: 90px;
+  font-size: 26px;
+  line-height: 1.4;
   font-family: 'TruenoRegular', sans-serif;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .hyperion-facts__subheader {
@@ -1742,7 +1746,7 @@ button.button-api, .button.button-api {
   }
 
   .hyperion-facts__h2 {
-    font-size: 50px;
+    font-size: 24px;
   }
 
   .hyperion-facts__header {
@@ -2146,8 +2150,11 @@ button.button-api, .button.button-api {
   transform: translateY(-50%);
 }
 .feature-api__image.-platform {
-  width: 40%;
-  right: 60%;
+  max-width: 600px;
+  width: 50%;
+  right: 50%;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .feature-api__image.-mobile {
   width: 50%;
