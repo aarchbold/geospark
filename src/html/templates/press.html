@@ -1,0 +1,103 @@
+<div id="press">
+</div>
+
+<script id="press-template" type="text/x-handlebars-template">
+    {{#each press}}
+        <div class="press-column">
+            <div class="press-item">
+                <div class="press-item__image" style="background-image:url({{this.imageUrl}});"></div>
+                <div class="press-item__content">
+                    <h2 class="press-item__headline">{{this.headline}}</h2>
+                    <div class="press-item__cta">
+                        {{#this.link}}
+                            <a href="{{& this}}" class="button button-press" target="_blank">Read More</a>
+                        {{/this.link}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript">
+    var data = {
+        // the below content populates the team section on the about page
+        // if you want to add a new team member, just add a new object
+        // don't forget the comma after each object
+        press: [
+            {
+                imageUrl: "static/images/ui/press/geospark1.png",
+                headline: "Geospark Analytics deploys AI for risk assessment and effective decision-making",
+                link: "https://www.geospatialworld.net/blogs/ai-for-risk-assessment-decision-making/"
+            },
+            {
+                imageUrl: "static/images/ui/press/geospark2.png",
+                headline: "Geospark Analytics Enhances Real-time Situational Awareness with Twitter Enterprise Data Agreement",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-enhances-real-time-situational-awareness-with-twitter-enterprise-data-agreement-300919753.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/international-sos.png",
+                headline: "International SOS Enhances Security Intelligence With Geospark Analytics AI",
+                link: "https://www.internationalsos.com/newsroom/news-releases/international-sos-enhances-security-intelligence-with-geospark-analytics-ai-sep-10-2019"
+            },
+            {
+                imageUrl: "static/images/ui/press/air-force-pitch-day.png",
+                headline: "Geospark Analytics Awarded Air Force Pitch Day Innovation Research Award",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-awarded-air-force-pitch-day-innovation-research-award-300833122.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/geospark3.png",
+                headline: "Geospark Analytics Launches New Hyperion Platform for Global Threat and Risk Assessment",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-launches-new-hyperion-platform-for-global-threat-and-risk-assessment-300819847.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/air-force-technology.png",
+                headline: "Geospark wins USAF contract to continue Hyperion platform development",
+                link: "https://www.airforce-technology.com/digital-disruptions/geospark-usaf-hyperion-platform/"
+            },
+            {
+                imageUrl: "static/images/ui/press/sbir.png",
+                headline: "GeoSpark Analytics Awarded Innovation Research Award to Bring Hyperion to Air Operations Centers",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-awarded-innovation-research-award-to-bring-hyperion-to-air-operations-centers-300818981.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/usgif.png",
+                headline: "2019 State And Future Of Geoint Report",
+                link: "https://www.geospark.io/2019stateofgeoint"
+            },
+            {
+                imageUrl: "static/images/ui/press/enterprise-security.png",
+                headline: "Top 10 Threat Management Solution Provider",
+                link: "https://threat-management.enterprisesecuritymag.com/vendors/geospark/2018"
+            },
+            {
+                imageUrl: "static/images/ui/press/gartner-cool-vendor.png",
+                headline: "GeoSpark Analytics Named a Cool Vendor by Gartner in Location Services and Applications",
+                link: "https://blog.geospark.io/geospark-analytics-named-a-cool-vendor-by-gartner-in-location-services-and-applications-a77dc54bd01c"
+            },
+            {
+                imageUrl: "static/images/ui/press/moxieaward.png",
+                headline: "GeoSpark Analytics Selected as Moxie Award Finalist",
+                link: "https://moxieaward.com/finalists/"
+            },
+            {
+                imageUrl: "static/images/ui/press/washington-innovation.png",
+                headline: "2018 Greater Washington Innovation Finalist",
+                link: "https://www.novachamber.org/innovation-awards.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/geospark4.png",
+                headline: "GeoSpark Analytics Launches BlueGlass, a Location-Based, AI-Powered Data Analytics Platform",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-launches-blueglass-a-location-based-ai-powered-data-analytics-platform-300569796.html"
+            },
+            {
+                imageUrl: "static/images/ui/press/washington-business-journal.png",
+                headline: "Fairfax County government contractor spins out data analytics startup",
+                link: "https://www.bizjournals.com/washington/news/2017/12/12/fairfax-county-government-contractor-spins-out.html"
+            }
+        ]
+    };
+    var template = Handlebars.compile(document.getElementById('press-template').innerHTML);
+    var pressData = template(data);
+    document.getElementById('press').innerHTML += pressData;
+</script>

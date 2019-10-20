@@ -75,3 +75,12 @@ button, .button {
     box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
 }
 
+.button-press {
+    padding: 12px 22px !important;
+    color: $color-main-font;
+    background-color: $color-nav-button;
+    font-size: 15px;
+    font-family: 'TruenoRegular', sans-serif;
+    box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
+}
+

@@ -10,8 +10,8 @@
 <meta property="og:image" content="">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Geospark">
-<script src="static/js/vendors.js?cache=1571529212577"></script>
-<link rel="stylesheet" href="static/css/styles.css?cache=1571529212577">
+<script src="static/js/vendors.js?cache=1571551468694"></script>
+<link rel="stylesheet" href="static/css/styles.css?cache=1571551468694">
 <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png">
 
     </head>
@@ -113,27 +113,20 @@
 
                 <div class="section-about">
                     <div class="team-container">
-                        <div id="team">
+                        <div id="press">
 </div>
 
-<script id="team-template" type="text/x-handlebars-template">
-    {{#each team}}
-        <div class="team-column">
-            <div class="team-item">
-                <div class="team-item__image" style="background-image:url({{this.imageUrl}});"></div>
-                <div class="team-item__content">
-                    <h2 class="team-item__name">{{this.name}}</h2>
-                    <p class="team-item__position">{{this.description}}</p>
-                    <div class="team-item__social">
-                        {{#this.linkedIn}}
-                            <a href="{{& this}}" target="_blank" class="team-item__social--image"><img src="static/images/icons/icon-linkedin.svg" /></a>
-                        {{/this.linkedIn}}
-                        {{#this.facebook}}
-                            <a href="{{& this}}" target="_blank" class="team-item__social--image"><img src="static/images/icons/icon-facebook.svg" /></a>
-                        {{/this.facebook}}
-                        {{#this.twitter}}
-                            <a href="{{& this}}" target="_blank" class="team-item__social--image"><img src="static/images/icons/icon-twitter.svg" /></a>
-                        {{/this.twitter}}
+<script id="press-template" type="text/x-handlebars-template">
+    {{#each press}}
+        <div class="press-column">
+            <div class="press-item">
+                <div class="press-item__image" style="background-image:url({{this.imageUrl}});"></div>
+                <div class="press-item__content">
+                    <h2 class="press-item__headline">{{this.headline}}</h2>
+                    <div class="press-item__cta">
+                        {{#this.link}}
+                            <a href="{{& this}}" class="button button-press" target="_blank">Read More</a>
+                        {{/this.link}}
                     </div>
                 </div>
             </div>
@@ -146,143 +139,82 @@
         // the below content populates the team section on the about page
         // if you want to add a new team member, just add a new object
         // don't forget the comma after each object
-        team: [
+        press: [
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Omar Balkissoon",
-                description: "Founder & Chief Executive Officer",
-                linkedIn: "https://www.linkedin.com/in/omar-balkissoon-8b2b6a/"
+                imageUrl: "static/images/ui/press/geospark1.png",
+                headline: "Geospark Analytics deploys AI for risk assessment and effective decision-making",
+                link: "https://www.geospatialworld.net/blogs/ai-for-risk-assessment-decision-making/"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "John Goolgasian",
-                description: "Chief Operating Officer",
-                linkedIn: "https://www.linkedin.com/in/johnpgool/"
+                imageUrl: "static/images/ui/press/geospark2.png",
+                headline: "Geospark Analytics Enhances Real-time Situational Awareness with Twitter Enterprise Data Agreement",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-enhances-real-time-situational-awareness-with-twitter-enterprise-data-agreement-300919753.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Serena Kelleher-Vergantini",
-                description: "Head of Product",
-                linkedIn: "https://www.linkedin.com/in/serena-kelleher-vergantini-b602a051/ "
+                imageUrl: "static/images/ui/press/international-sos.png",
+                headline: "International SOS Enhances Security Intelligence With Geospark Analytics AI",
+                link: "https://www.internationalsos.com/newsroom/news-releases/international-sos-enhances-security-intelligence-with-geospark-analytics-ai-sep-10-2019"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Chad Dalton",
-                description: "Chief Technology Officer",
-                linkedIn: "https://www.linkedin.com/in/chadhdalton/"
+                imageUrl: "static/images/ui/press/air-force-pitch-day.png",
+                headline: "Geospark Analytics Awarded Air Force Pitch Day Innovation Research Award",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-awarded-air-force-pitch-day-innovation-research-award-300833122.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Matt McKnight",
-                description: "Senior Data Scientist",
-                linkedIn: "https://www.linkedin.com/in/mattmcknight/"
+                imageUrl: "static/images/ui/press/geospark3.png",
+                headline: "Geospark Analytics Launches New Hyperion Platform for Global Threat and Risk Assessment",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-launches-new-hyperion-platform-for-global-threat-and-risk-assessment-300819847.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "David Tong",
-                description: "Director of Finance",
-                linkedIn: "https://www.linkedin.com/in/david-tong-44b87312/"
+                imageUrl: "static/images/ui/press/air-force-technology.png",
+                headline: "Geospark wins USAF contract to continue Hyperion platform development",
+                link: "https://www.airforce-technology.com/digital-disruptions/geospark-usaf-hyperion-platform/"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Kevin Helm",
-                description: "Head of Business Development",
-                linkedIn: "https://www.linkedin.com/in/khelm33/"
+                imageUrl: "static/images/ui/press/sbir.png",
+                headline: "GeoSpark Analytics Awarded Innovation Research Award to Bring Hyperion to Air Operations Centers",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-awarded-innovation-research-award-to-bring-hyperion-to-air-operations-centers-300818981.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Rida Khan",
-                description: "Demand Generation Specialist",
-                linkedIn: "https://www.linkedin.com/in/ridakhanvcu/"
+                imageUrl: "static/images/ui/press/usgif.png",
+                headline: "2019 State And Future Of Geoint Report",
+                link: "https://www.geospark.io/2019stateofgeoint"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Chris Bower",
-                description: "Sr. Analyst & Client Success",
-                linkedIn: "https://www.linkedin.com/in/chris-bower-410355135/"
+                imageUrl: "static/images/ui/press/enterprise-security.png",
+                headline: "Top 10 Threat Management Solution Provider",
+                link: "https://threat-management.enterprisesecuritymag.com/vendors/geospark/2018"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "James Boehm",
-                description: "Business Development",
-                linkedIn: "https://www.linkedin.com/in/james-boehm-162a4aa2/"
+                imageUrl: "static/images/ui/press/gartner-cool-vendor.png",
+                headline: "GeoSpark Analytics Named a Cool Vendor by Gartner in Location Services and Applications",
+                link: "https://blog.geospark.io/geospark-analytics-named-a-cool-vendor-by-gartner-in-location-services-and-applications-a77dc54bd01c"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Emma Duncan",
-                description: "Associate Product Manager",
-                linkedIn: "https://www.linkedin.com/in/emma-duncan-b34286166/"
+                imageUrl: "static/images/ui/press/moxieaward.png",
+                headline: "GeoSpark Analytics Selected as Moxie Award Finalist",
+                link: "https://moxieaward.com/finalists/"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Ankit Phaterpekar",
-                description: "Developer & Data Scientist",
-                linkedIn: "https://www.linkedin.com/in/phaterpekar/"
+                imageUrl: "static/images/ui/press/washington-innovation.png",
+                headline: "2018 Greater Washington Innovation Finalist",
+                link: "https://www.novachamber.org/innovation-awards.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Brendan Slezak",
-                description: "Developer & Data Scientist",
-                linkedIn: "https://www.linkedin.com/in/brendan-slezak-a5087157/"
+                imageUrl: "static/images/ui/press/geospark4.png",
+                headline: "GeoSpark Analytics Launches BlueGlass, a Location-Based, AI-Powered Data Analytics Platform",
+                link: "https://www.prnewswire.com/news-releases/geospark-analytics-launches-blueglass-a-location-based-ai-powered-data-analytics-platform-300569796.html"
             },
             {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Chris Casad",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/ccasad/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Tim DeVille",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/timothy-deville-63a5aa80/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Jeffrey Hager",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/jeffhagerdev/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Abi Morris",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/abigailmorrisdev/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Luke Hogrebe",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/lukehogrebe/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Ryan Kramer",
-                description: "Developer",
-                linkedIn: "https://www.linkedin.com/in/ryan-kramer-4767a061/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Kristine Smith",
-                description: "Administrative Services Lead",
-                linkedIn: "https://www.linkedin.com/in/kristine-smith-28b583155/"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Alexis Balkissoon",
-                description: "Business Operation"
-            },
-            {
-                imageUrl: "static/images/ui/team/blank.png",
-                name: "Greg Gebhardt",
-                description: "Advisor",
-                linkedIn: "https://www.linkedin.com/in/greg-gebhardt-8b1b0a72/"
+                imageUrl: "static/images/ui/press/washington-business-journal.png",
+                headline: "Fairfax County government contractor spins out data analytics startup",
+                link: "https://www.bizjournals.com/washington/news/2017/12/12/fairfax-county-government-contractor-spins-out.html"
             }
         ]
     };
-    var template = Handlebars.compile(document.getElementById('team-template').innerHTML);
-    var teamData = template(data);
-    document.getElementById('team').innerHTML += teamData;
+    var template = Handlebars.compile(document.getElementById('press-template').innerHTML);
+    var pressData = template(data);
+    document.getElementById('press').innerHTML += pressData;
 </script>
                     </div>
                 </div>
@@ -384,6 +316,6 @@
             </div>
         </div>
 
-        <script src="static/js/app.js?cache=1571529212577"></script>
+        <script src="static/js/app.js?cache=1571551468694"></script>
     </body>
 </html>

@@ -1350,6 +1350,16 @@ button.button-api, .button.button-api {
   box-shadow: 1px 1px 10px 1px rgba(75, 73, 255, 0.37);
 }
 
+.button-press {
+  padding: 12px 22px !important;
+  color: #ffffff;
+  background-color: #4B49FF;
+  font-size: 15px;
+  font-family: 'TruenoRegular', sans-serif;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(75, 73, 255, 0.37);
+  box-shadow: 1px 1px 10px 1px rgba(75, 73, 255, 0.37);
+}
+
 /* custom alerts styles
 */
 .page-outer__custom-alerts {
@@ -2386,16 +2396,24 @@ button.button-api, .button.button-api {
   display: table;
 }
 
-.team-column {
+.team-column, .press-column {
   float: left;
   width: 25%;
+}
+
+.press-column {
+  width: 33.3%;
 }
 
 .team-item {
   margin: 10px;
 }
 
-.team-item__image {
+.press-item {
+  margin: 20px 20px 10px;
+}
+
+.team-item__image, .press-item__image {
   width: 100%;
   height: 220px;
   background-size: cover;
@@ -2403,7 +2421,12 @@ button.button-api, .button.button-api {
   background-position: 50% 55%;
 }
 
-.team-item__content {
+.press-item__image {
+  height: 180px;
+  border-radius: 10px 0 0 0;
+}
+
+.team-item__content, .press-item__content {
   position: relative;
   top: -20px;
   text-align: center;
@@ -2416,10 +2439,24 @@ button.button-api, .button.button-api {
   border-radius: 20px;
 }
 
+.press-item__content {
+  border-radius: 0 0 10px 10px;
+  top: 0;
+  padding: 20px 20px 60px;
+  min-height: 220px;
+}
+
 .team-item__social {
   position: absolute;
   bottom: 9px;
   right: 12px;
+}
+
+.press-item__cta {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
 }
 
 .team-item__social--image {
@@ -2438,16 +2475,38 @@ button.button-api, .button.button-api {
   padding-bottom: 20px;
 }
 
+.press-item__headline {
+  font-size: 20px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  font-family: 'TruenoRegular', sans-serif;
+  text-align: left;
+}
+
 .team-item__position {
   font-size: 16px;
   opacity: 0.5;
   line-height: 1.3;
 }
 
+@media (max-width: 1120px) {
+  .press-item__headline {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1050px) {
+  .press-column {
+    width: 50%;
+  }
+}
 @media (max-width: 1000px) {
   .team-column {
     float: left;
     width: 33.3%;
+  }
+
+  .section-about {
+    padding: 60px 0px;
   }
 }
 @media (max-width: 750px) {
@@ -2457,6 +2516,19 @@ button.button-api, .button.button-api {
   }
 }
 @media (max-width: 650px) {
+  .press-column {
+    float: none;
+    width: 100%;
+  }
+
+  .press-item__content {
+    min-height: auto;
+  }
+
+  .press-item {
+    margin: 20px 10px 30px;
+  }
+
   .section-about {
     padding: 60px 0px;
   }
