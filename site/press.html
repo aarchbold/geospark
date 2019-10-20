@@ -10,8 +10,8 @@
 <meta property="og:image" content="">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Geospark">
-<script src="static/js/vendors.js?cache=1571551468694"></script>
-<link rel="stylesheet" href="static/css/styles.css?cache=1571551468694">
+<script src="static/js/vendors.js?cache=1571597090520"></script>
+<link rel="stylesheet" href="static/css/styles.css?cache=1571597090520">
 <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png">
 
     </head>
@@ -120,7 +120,11 @@
     {{#each press}}
         <div class="press-column">
             <div class="press-item">
-                <div class="press-item__image" style="background-image:url({{this.imageUrl}});"></div>
+                <div class="press-item__image" style="background-image:url({{this.imageUrl}});">
+                    {{#this.link}}
+                        <a href="{{& this}}" class="press-item__image--link" target="_blank"></a>
+                    {{/this.link}}
+                </div>
                 <div class="press-item__content">
                     <h2 class="press-item__headline">{{this.headline}}</h2>
                     <div class="press-item__cta">
@@ -316,6 +320,6 @@
             </div>
         </div>
 
-        <script src="static/js/app.js?cache=1571551468694"></script>
+        <script src="static/js/app.js?cache=1571597090520"></script>
     </body>
 </html>

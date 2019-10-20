@@ -84,3 +84,14 @@ button, .button {
     box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
 }
 
+@media (max-width: 650px) {
+    .button-press {
+        padding: 14px 24px !important;
+        color: $color-main-font;
+        background-color: $color-nav-button;
+        font-size: 20px;
+        font-family: 'TruenoRegular', sans-serif;
+        box-shadow: 1px 1px 10px 1px rgba(75,73,255,0.37);
+    }
+}
+

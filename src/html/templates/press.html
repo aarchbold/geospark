@@ -5,7 +5,11 @@
     {{#each press}}
         <div class="press-column">
             <div class="press-item">
-                <div class="press-item__image" style="background-image:url({{this.imageUrl}});"></div>
+                <div class="press-item__image" style="background-image:url({{this.imageUrl}});">
+                    {{#this.link}}
+                        <a href="{{& this}}" class="press-item__image--link" target="_blank"></a>
+                    {{/this.link}}
+                </div>
                 <div class="press-item__content">
                     <h2 class="press-item__headline">{{this.headline}}</h2>
                     <div class="press-item__cta">
