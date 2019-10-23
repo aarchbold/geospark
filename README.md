@@ -29,6 +29,9 @@ Gulp watch will watch all the following directories for changes:
 Note: images and videos are stored in the compiled site static directory.
 * /site/static - compiled css, js, and static images and video files
 
+### Updating the code
+When making updates to the source files, just make sure you are running "gulp watch" in terminal from inside the root directory of this repo.
+When creating brand new files you may need to re-run "gulp" in order to get gulp to notice them. So if you add a new .sass file or a new html file and gulp watch doesn't pick it up. Just close gulp, re-run "gulp" and then "gulp watch" and it should work after that.
 
 
 
